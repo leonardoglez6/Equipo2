@@ -1,0 +1,48 @@
+N E X T F L O W  ~  version 23.04.3
+Launching `https://github.com/nf-core/rnaseq` [voluminous_ritchie] DSL2 - revision: b89fac3265 [3.14.0]
+
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/rnaseq v3.14.0-gb89fac3[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision        : [0;32m3.14.0[0m
+  [0;34mrunName         : [0;32mvoluminous_ritchie[0m
+  [0;34mcontainerEngine : [0;32msingularity[0m
+  [0;34mlaunchDir       : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts[0m
+  [0;34mworkDir         : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work[0m
+  [0;34mprojectDir      : [0;32m/home/lgonzalez/.nextflow/assets/nf-core/rnaseq[0m
+  [0;34muserName        : [0;32mlgonzalez[0m
+  [0;34mprofile         : [0;32msingularity[0m
+  [0;34mconfigFiles     : [0;32m[0m
+
+[1mInput/output options[0m
+  [0;34minput           : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/nf_sheet.csv[0m
+  [0;34moutdir          : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/nf_test1[0m
+
+[1mReference genome options[0m
+  [0;34mfasta           : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/reference/Homo_sapiens.GRCh38.transcripts.fa.gz[0m
+
+[1mAlignment options[0m
+  [0;34mpseudo_aligner  : [0;32mkallisto[0m
+  [0;34mmin_mapped_reads: [0;32m5[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/rnaseq for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+No GTF or GFF3 annotation specified! The pipeline requires at least one of these files.

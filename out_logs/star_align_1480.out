@@ -1,0 +1,54 @@
+Procesando muestra: SRR31732086
+	STAR --runThreadN 12 --genomeDir /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index --readFilesIn /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732086_1_trimmed.fq.gz /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732086_2_trimmed.fq.gz --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --readFilesCommand zcat --outFileNamePrefix /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/SRR31732086.
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Apr 27 11:02:33 ..... started STAR run
+Apr 27 11:02:33 ..... loading genome
+Apr 27 11:07:07 ..... started mapping
+Apr 27 11:13:20 ..... finished mapping
+Apr 27 11:13:23 ..... started sorting BAM
+Apr 27 11:13:58 ..... finished successfully
+Procesando muestra: SRR31732087
+	STAR --runThreadN 12 --genomeDir /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index --readFilesIn /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732087_1_trimmed.fq.gz /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732087_2_trimmed.fq.gz --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --readFilesCommand zcat --outFileNamePrefix /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/SRR31732087.
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Apr 27 11:14:01 ..... started STAR run
+Apr 27 11:14:01 ..... loading genome
+Apr 27 11:14:30 ..... started mapping
+Apr 27 11:19:54 ..... finished mapping
+Apr 27 11:19:58 ..... started sorting BAM
+Apr 27 11:20:30 ..... finished successfully
+Procesando muestra: SRR31732088
+	STAR --runThreadN 12 --genomeDir /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index --readFilesIn /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732088_1_trimmed.fq.gz /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732088_2_trimmed.fq.gz --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --readFilesCommand zcat --outFileNamePrefix /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/SRR31732088.
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Apr 27 11:20:34 ..... started STAR run
+Apr 27 11:20:34 ..... loading genome
+Apr 27 11:21:04 ..... started mapping
+Apr 27 11:27:49 ..... finished mapping
+Apr 27 11:27:55 ..... started sorting BAM
+Apr 27 11:28:35 ..... finished successfully
+Procesando muestra: SRR31732089
+	STAR --runThreadN 12 --genomeDir /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index --readFilesIn /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732089_1_trimmed.fq.gz /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732089_2_trimmed.fq.gz --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --readFilesCommand zcat --outFileNamePrefix /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/SRR31732089.
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Apr 27 11:28:39 ..... started STAR run
+Apr 27 11:28:39 ..... loading genome
+Apr 27 11:29:10 ..... started mapping
+Apr 27 11:35:48 ..... finished mapping
+Apr 27 11:35:53 ..... started sorting BAM
+Apr 27 11:36:34 ..... finished successfully
+Procesando muestra: SRR31732090
+	STAR --runThreadN 12 --genomeDir /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index --readFilesIn /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732090_1_trimmed.fq.gz /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732090_2_trimmed.fq.gz --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --readFilesCommand zcat --outFileNamePrefix /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/SRR31732090.
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Apr 27 11:36:38 ..... started STAR run
+Apr 27 11:36:38 ..... loading genome
+Apr 27 11:37:13 ..... started mapping
+Apr 27 11:42:22 ..... finished mapping
+Apr 27 11:42:27 ..... started sorting BAM
+Apr 27 11:42:59 ..... finished successfully
+Procesando muestra: SRR31732091
+	STAR --runThreadN 12 --genomeDir /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index --readFilesIn /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732091_1_trimmed.fq.gz /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed/SRR31732091_2_trimmed.fq.gz --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --readFilesCommand zcat --outFileNamePrefix /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/SRR31732091.
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Apr 27 11:43:02 ..... started STAR run
+Apr 27 11:43:02 ..... loading genome
+Apr 27 11:43:39 ..... started mapping
+Apr 27 11:49:34 ..... finished mapping
+Apr 27 11:49:40 ..... started sorting BAM
+Apr 27 11:50:13 ..... finished successfully

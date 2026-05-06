@@ -1,0 +1,1158 @@
+N E X T F L O W  ~  version 23.04.3
+Launching `https://github.com/nf-core/rnaseq` [cheesy_torricelli] DSL2 - revision: b89fac3265 [3.14.0]
+
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/rnaseq v3.14.0-gb89fac3[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision        : [0;32m3.14.0[0m
+  [0;34mrunName         : [0;32mcheesy_torricelli[0m
+  [0;34mcontainerEngine : [0;32msingularity[0m
+  [0;34mlaunchDir       : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts[0m
+  [0;34mworkDir         : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work[0m
+  [0;34mprojectDir      : [0;32m/home/lgonzalez/.nextflow/assets/nf-core/rnaseq[0m
+  [0;34muserName        : [0;32mlgonzalez[0m
+  [0;34mprofile         : [0;32msingularity[0m
+  [0;34mconfigFiles     : [0;32m[0m
+
+[1mInput/output options[0m
+  [0;34minput           : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/nf_sheet.csv[0m
+  [0;34moutdir          : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/nf_test1[0m
+
+[1mReference genome options[0m
+  [0;34mfasta           : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/BioProject_2026/reference/Homo_sapiens.GRCh38.cdna.all.fa.gz[0m
+  [0;34mgtf             : [0;32m/mnt/data/bioinfo-estadistica-2/RNAseq_2026/BioProject_2026/reference/GCF_000001405.40_GRCh38.p14_genomic.gtf[0m
+
+[1mAlignment options[0m
+  [0;34mpseudo_aligner  : [0;32mkallisto[0m
+  [0;34mmin_mapped_reads: [0;32m5[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/rnaseq for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.1400710
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/rnaseq/blob/master/CITATIONS.md
+
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[6A
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[12A
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[26A
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[43A
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[59A
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[60A
+executor >  local (4)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[61A
+executor >  local (4)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[61A
+executor >  local (4)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[61A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[61A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[61A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [  0%] 0 of 1[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[31mERROR ~ Error executing process > 'NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)'[K
+[K
+Caused by:[K
+  Process `NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)` terminated with an error exit status (1)[K
+[K
+Command executed:[K
+[K
+  filter_gtf.py \[K
+      --gtf GCF_000001405.40_GRCh38.p14_genomic.gtf \[K
+      --fasta Homo_sapiens.GRCh38.cdna.all.fa \[K
+      --prefix Homo_sapiens.GRCh38.cdna.all[K
+  [K
+  cat <<-END_VERSIONS > versions.yml[K
+  "NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER":[K
+      python: $(python --version | sed 's/Python //g')[K
+  END_VERSIONS[K
+[K
+Command exit status:[K
+  1[K
+[K
+Command output:[K
+  (empty)[K
+[K
+Command error:[K
+  fasta_gtf_filter - 2026-04-27 13:56:58,365 INFO: Extracted chromosome sequence names from Homo_sapiens.GRCh38.cdna.all.fa[K
+  Traceback (most recent call last):[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 73, in <module>[K
+      filter_gtf(args.fasta, args.gtf, args.prefix + ".filtered.gtf", args.skip_transcript_id_check)[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 53, in filter_gtf[K
+      raise ValueError("All GTF lines removed by filters")[K
+  ValueError: All GTF lines removed by filters[K
+[K
+Work dir:[K
+  /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work/16/4a0ebc33d6f9de9b24c97bccd673b6[K
+[K
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`[K
+[K
+ -- Check '.nextflow.log' file for details[39m[K
+[99A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1, failed: 1 ✘[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 83%] 5 of 6, cached: 5[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+Execution cancelled -- Finishing pending tasks before exit[K
+[31mERROR ~ Error executing process > 'NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)'[K
+[K
+Caused by:[K
+  Process `NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)` terminated with an error exit status (1)[K
+[K
+Command executed:[K
+[K
+  filter_gtf.py \[K
+      --gtf GCF_000001405.40_GRCh38.p14_genomic.gtf \[K
+      --fasta Homo_sapiens.GRCh38.cdna.all.fa \[K
+      --prefix Homo_sapiens.GRCh38.cdna.all[K
+  [K
+  cat <<-END_VERSIONS > versions.yml[K
+  "NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER":[K
+      python: $(python --version | sed 's/Python //g')[K
+  END_VERSIONS[K
+[K
+Command exit status:[K
+  1[K
+[K
+Command output:[K
+  (empty)[K
+[K
+Command error:[K
+  fasta_gtf_filter - 2026-04-27 13:56:58,365 INFO: Extracted chromosome sequence names from Homo_sapiens.GRCh38.cdna.all.fa[K
+  Traceback (most recent call last):[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 73, in <module>[K
+      filter_gtf(args.fasta, args.gtf, args.prefix + ".filtered.gtf", args.skip_transcript_id_check)[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 53, in filter_gtf[K
+      raise ValueError("All GTF lines removed by filters")[K
+  ValueError: All GTF lines removed by filters[K
+[K
+Work dir:[K
+  /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work/16/4a0ebc33d6f9de9b24c97bccd673b6[K
+[K
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`[K
+[K
+ -- Check '.nextflow.log' file for details[39m[K
+[100A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1, failed: 1 ✘[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [100%] 6 of 6, cached: 5 ✔[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [  0%] 0 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[K
+[31mERROR ~ Error executing process > 'NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)'[K
+[K
+Caused by:[K
+  Process `NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)` terminated with an error exit status (1)[K
+[K
+Command executed:[K
+[K
+  filter_gtf.py \[K
+      --gtf GCF_000001405.40_GRCh38.p14_genomic.gtf \[K
+      --fasta Homo_sapiens.GRCh38.cdna.all.fa \[K
+      --prefix Homo_sapiens.GRCh38.cdna.all[K
+  [K
+  cat <<-END_VERSIONS > versions.yml[K
+  "NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER":[K
+      python: $(python --version | sed 's/Python //g')[K
+  END_VERSIONS[K
+[K
+Command exit status:[K
+  1[K
+[K
+Command output:[K
+  (empty)[K
+[K
+Command error:[K
+  fasta_gtf_filter - 2026-04-27 13:56:58,365 INFO: Extracted chromosome sequence names from Homo_sapiens.GRCh38.cdna.all.fa[K
+  Traceback (most recent call last):[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 73, in <module>[K
+      filter_gtf(args.fasta, args.gtf, args.prefix + ".filtered.gtf", args.skip_transcript_id_check)[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 53, in filter_gtf[K
+      raise ValueError("All GTF lines removed by filters")[K
+  ValueError: All GTF lines removed by filters[K
+[K
+Work dir:[K
+  /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work/16/4a0ebc33d6f9de9b24c97bccd673b6[K
+[K
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`[K
+[K
+ -- Check '.nextflow.log' file for details[39m[K
+[100A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1, failed: 1 ✘[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [100%] 6 of 6, cached: 5 ✔[K
+[e6/fabc56] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 16%] 1 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+[31mERROR ~ Error executing process > 'NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)'[K
+[K
+Caused by:[K
+  Process `NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)` terminated with an error exit status (1)[K
+[K
+Command executed:[K
+[K
+  filter_gtf.py \[K
+      --gtf GCF_000001405.40_GRCh38.p14_genomic.gtf \[K
+      --fasta Homo_sapiens.GRCh38.cdna.all.fa \[K
+      --prefix Homo_sapiens.GRCh38.cdna.all[K
+  [K
+  cat <<-END_VERSIONS > versions.yml[K
+  "NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER":[K
+      python: $(python --version | sed 's/Python //g')[K
+  END_VERSIONS[K
+[K
+Command exit status:[K
+  1[K
+[K
+Command output:[K
+  (empty)[K
+[K
+Command error:[K
+  fasta_gtf_filter - 2026-04-27 13:56:58,365 INFO: Extracted chromosome sequence names from Homo_sapiens.GRCh38.cdna.all.fa[K
+  Traceback (most recent call last):[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 73, in <module>[K
+      filter_gtf(args.fasta, args.gtf, args.prefix + ".filtered.gtf", args.skip_transcript_id_check)[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 53, in filter_gtf[K
+      raise ValueError("All GTF lines removed by filters")[K
+  ValueError: All GTF lines removed by filters[K
+[K
+Work dir:[K
+  /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work/16/4a0ebc33d6f9de9b24c97bccd673b6[K
+[K
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`[K
+[K
+ -- Check '.nextflow.log' file for details[39m[K
+[K
+[100A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1, failed: 1 ✘[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [100%] 6 of 6, cached: 5 ✔[K
+[26/285420] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 33%] 2 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+-[0;35m[nf-core/rnaseq][0;31m Pipeline completed with errors[0m-[K
+[31mERROR ~ Error executing process > 'NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)'[K
+[K
+Caused by:[K
+  Process `NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)` terminated with an error exit status (1)[K
+[K
+Command executed:[K
+[K
+  filter_gtf.py \[K
+      --gtf GCF_000001405.40_GRCh38.p14_genomic.gtf \[K
+      --fasta Homo_sapiens.GRCh38.cdna.all.fa \[K
+      --prefix Homo_sapiens.GRCh38.cdna.all[K
+  [K
+  cat <<-END_VERSIONS > versions.yml[K
+  "NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER":[K
+      python: $(python --version | sed 's/Python //g')[K
+  END_VERSIONS[K
+[K
+Command exit status:[K
+  1[K
+[K
+Command output:[K
+  (empty)[K
+[K
+Command error:[K
+  fasta_gtf_filter - 2026-04-27 13:56:58,365 INFO: Extracted chromosome sequence names from Homo_sapiens.GRCh38.cdna.all.fa[K
+  Traceback (most recent call last):[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 73, in <module>[K
+      filter_gtf(args.fasta, args.gtf, args.prefix + ".filtered.gtf", args.skip_transcript_id_check)[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 53, in filter_gtf[K
+      raise ValueError("All GTF lines removed by filters")[K
+  ValueError: All GTF lines removed by filters[K
+[K
+Work dir:[K
+  /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work/16/4a0ebc33d6f9de9b24c97bccd673b6[K
+[K
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`[K
+[K
+ -- Check '.nextflow.log' file for details[39m[K
+[100A
+executor >  local (6)[K
+[f1/20df80] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[16/4a0ebc] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1, failed: 1 ✘[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[3b/7f995c] process > NFCORE_RNASEQ:RNASEQ:PREPAR... [100%] 1 of 1 ✔[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:PREPAR... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CAT_FASTQ -[K
+[0a/96ee5c] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [100%] 6 of 6, cached: 5 ✔[K
+[26/285420] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... [ 33%] 2 of 6[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:FASTQ_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:ALIGN_... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_MA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:STRING... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:SUBREA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQ... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDTOO... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BEDGRA... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUALIM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DUPRADAR  -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:BAM_RS... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:QUANTI... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:DESEQ2... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:CUSTOM... -[K
+[-        ] process > NFCORE_RNASEQ:RNASEQ:MULTIQC   -[K
+-[0;35m[nf-core/rnaseq][0;31m Pipeline completed with errors[0m-[K
+[31mERROR ~ Error executing process > 'NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)'[K
+[K
+Caused by:[K
+  Process `NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER (Homo_sapiens.GRCh38.cdna.all.fa)` terminated with an error exit status (1)[K
+[K
+Command executed:[K
+[K
+  filter_gtf.py \[K
+      --gtf GCF_000001405.40_GRCh38.p14_genomic.gtf \[K
+      --fasta Homo_sapiens.GRCh38.cdna.all.fa \[K
+      --prefix Homo_sapiens.GRCh38.cdna.all[K
+  [K
+  cat <<-END_VERSIONS > versions.yml[K
+  "NFCORE_RNASEQ:RNASEQ:PREPARE_GENOME:GTF_FILTER":[K
+      python: $(python --version | sed 's/Python //g')[K
+  END_VERSIONS[K
+[K
+Command exit status:[K
+  1[K
+[K
+Command output:[K
+  (empty)[K
+[K
+Command error:[K
+  fasta_gtf_filter - 2026-04-27 13:56:58,365 INFO: Extracted chromosome sequence names from Homo_sapiens.GRCh38.cdna.all.fa[K
+  Traceback (most recent call last):[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 73, in <module>[K
+      filter_gtf(args.fasta, args.gtf, args.prefix + ".filtered.gtf", args.skip_transcript_id_check)[K
+    File "/home/lgonzalez/.nextflow/assets/nf-core/rnaseq/bin/filter_gtf.py", line 53, in filter_gtf[K
+      raise ValueError("All GTF lines removed by filters")[K
+  ValueError: All GTF lines removed by filters[K
+[K
+Work dir:[K
+  /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/work/16/4a0ebc33d6f9de9b24c97bccd673b6[K
+[K
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`[K
+[K
+ -- Check '.nextflow.log' file for details[39m[K
+

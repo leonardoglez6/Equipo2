@@ -1,0 +1,36 @@
+
+[build] loading fasta file ./reference/Homo_sapiens.GRCh38.transcripts.fa.gz
+[build] k-mer length: 31
+[build] warning: clipped off poly-A tail (longer than 10)
+        from 9862 target sequences
+[build] warning: replaced 100011 non-ACGUT characters in the input sequence
+        with pseudorandom nucleotides
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done 
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 2666883 contigs and contains 185494014 k-mers 
+
+
+[quant] fragment length distribution will be estimated from the data
+Error: could not create directory ./align/kallisto/kallisto_quant/SRR31732086
+
+
+[quant] fragment length distribution will be estimated from the data
+Error: could not create directory ./align/kallisto/kallisto_quant/SRR31732087
+
+
+[quant] fragment length distribution will be estimated from the data
+Error: could not create directory ./align/kallisto/kallisto_quant/SRR31732088
+
+
+[quant] fragment length distribution will be estimated from the data
+Error: could not create directory ./align/kallisto/kallisto_quant/SRR31732089
+
+
+[quant] fragment length distribution will be estimated from the data
+Error: could not create directory ./align/kallisto/kallisto_quant/SRR31732090
+
+
+[quant] fragment length distribution will be estimated from the data
+Error: could not create directory ./align/kallisto/kallisto_quant/SRR31732091
+
