@@ -16,11 +16,11 @@
 indir <- "/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/"
 outdir <- "/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/results/"
 
-# Opcion A - moverme a la carpeta y buscar
+# Moverme a la carpeta y buscar
 setwd(indir)
 files <- dir(pattern = "ReadsPerGene.out.tab")
 
-# crear matriz de cuentas
+# Crear matriz de cuentas
 counts <- c()
 for(i in seq_along(files)){
   x <- read.table(file = files[i], sep = "\t", header = FALSE, as.is = TRUE)
@@ -35,15 +35,14 @@ colnames(metadata) <- c("sample_id", "type")
 # Convertir a formato dataframe
 counts <- as.data.frame(counts)
 rownames(counts) <- x[,1] # Renombrar las filas con el nombre de los genes
-colnames(counts) <- sub("_ReadsPerGene.out.tab", "", files)
+colnames(counts) <- sub("_ReadsPerGene.out.tab", "", files) #Renombrar las columnas con los nombres de la muestra correspondiente
 
 # Eliminar las 4 primeras filas
-# counts <- counts[5:129239, ] # Filtramos los rows con informacion general sobre el mapeo
-counts <- counts[-c(1:4),]
+counts <- counts[-c(1:4),] # Filtramos los rows con informacion general sobre el mapeo
 
 # Almacenar metadata y matriz de cuentas
-save(metadata, counts, file = paste0(outdir, "counts/raw_counts.RData"))
-write.csv(counts, file = paste0(outdir,"counts/raw_counts.csv"))
+save(metadata, counts, file = paste0(outdir, "counts/raw_counts.RData")) #Matriz de cuentas + archivo de metadata
+write.csv(counts, file = paste0(outdir,"counts/raw_counts.csv")) #Solo la matriz de cuentas
 
 # Guardar informacion de ejecucion
 sessionInfo()
