@@ -14,69 +14,73 @@ editor_options:
 
 -   **Integrantes:**
 
-    -   Leonardo González López (lgonzalez)
-    -   Efrén Nosedal González (enosedal)
-    -   Yuliana Denisse Sosa Gómez (ysosa)
-
--   **Correos electrónicos de los integrantes:**
-
-    -   [minestev19\@gmail.com](mailto:minestev19@gmail.com){.email},
-    -   [enosedal\@gmail.com](enosedal@gmail.com),
-    -   [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com){.email}
+    -   Leonardo González López (lgonzalez) -
+        [minestev17\@gmail.com](mailto:minestev19@gmail.com){.email},
+    -   Efrén Nosedal González (enosedal) -
+        [enosedal\@gmail.com](enosedal@gmail.com),
+    -   Yuliana Denisse Sosa Gómez (ysosa) -
+        [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com){.email}
 
 # Descripción de los datos
 
-+----------------------------------+----------------------------------+
-| Descripción                      | Información                      |
-+==================================+==================================+
-| BioProject                       | PRJNA1198873                     |
-+----------------------------------+----------------------------------+
-| Especie                          | *Homo sapiens*                   |
-+----------------------------------+----------------------------------+
-| Tipo de bibliotecas              | *paired-end*                     |
-+----------------------------------+----------------------------------+
-| Método de selección              | Purificación de transcritos      |
-|                                  | poliadenilados (poli-A)          |
-+----------------------------------+----------------------------------+
-| Número de transcriptomas         | 6                                |
-+----------------------------------+----------------------------------+
-| Número de réplicas biológicas    | 3 replicas biológicas por        |
-|                                  | condición (control y knockdown)  |
-+----------------------------------+----------------------------------+
-| Secuenciador empleado            | Illumina NovaSeq 6000            |
-+----------------------------------+----------------------------------+
-| Distribución de las muestras     | -   **Control**: 3 réplicas      |
-|                                  |     biológicas WT (SRR31732089,  |
-|                                  |     SRR31732090, SRR31732091)    |
-|                                  |                                  |
-|                                  | -   **Sobreexpresión**: 3        |
-|                                  |     réplicas biológicas con      |
-|                                  |     knockdown de *STEAP3*        |
-|                                  |     (SRR31732086, SRR31732087,   |
-|                                  |     SRR31732088)\n               |
-+----------------------------------+----------------------------------+
-| Profundidad de secuenciación de  | 19 - 24 M seq                    |
-| cada transcriptoma               |                                  |
-+----------------------------------+----------------------------------+
-| Tamaño de las lecturas           | 148 bp                           |
-+----------------------------------+----------------------------------+
-| Artículo científico              | Zhao Z, Yu P, Wang Y, Li H et    |
-|                                  | al. Silencing of STEAP3          |
-|                                  | suppresses cervical cancer cell  |
-|                                  | proliferation and migration via  |
-|                                  | JAK/STAT3 signaling pathway.     |
-|                                  | Cancer Metab 2024 Dec            |
-|                                  | 30;12(1):40. PM ID: [3973 675    |
-|                                  | 1](htt%20%20%20%20p%20s:%20      |
-|                                  | //%20%%2020www%20%20.n%%202%200c |
-|                                  | bi.n%20%%2020%20lm.n%20i%2%200%% |
-|                                  | 2020h.%20g%%20%2020o%20%20v/p%20 |
-|                                  | ub%20med/3%20%209%%2%20020%207%2 |
-|                                  | %2003%20%%202%200%206%207%%20%20 |
-|                                  | 205%201 "Link to PubMed record") |
-+----------------------------------+----------------------------------+
++--------------------------------+--------------------------------+
+| Descripción                    | Información                    |
++================================+================================+
+| BioProject                     | PRJNA1198873                   |
++--------------------------------+--------------------------------+
+| Especie                        | *Homo sapiens*                 |
++--------------------------------+--------------------------------+
+| Tipo de bibliotecas            | *paired-end*                   |
++--------------------------------+--------------------------------+
+| Método de selección            | Purificación de transcritos    |
+|                                | poliadenilados (poli-A)        |
++--------------------------------+--------------------------------+
+| Número de transcriptomas       | 6                              |
++--------------------------------+--------------------------------+
+| Número de réplicas biológicas  | 3 replicas biológicas por      |
+|                                | condición (control y           |
+|                                | knockdown)                     |
++--------------------------------+--------------------------------+
+| Secuenciador empleado          | Illumina NovaSeq 6000          |
++--------------------------------+--------------------------------+
+| Distribución de las muestras   | -   **Control**: 3 réplicas    |
+|                                |     biológicas WT              |
+|                                |     (SRR31732089, SRR31732090, |
+|                                |     SRR31732091)               |
+|                                |                                |
+|                                | -   **Sobreexpresión**: 3      |
+|                                |     réplicas biológicas con    |
+|                                |     knockdown de *STEAP3*      |
+|                                |     (SRR31732086, SRR31732087, |
+|                                |     SRR31732088)\n             |
++--------------------------------+--------------------------------+
+| Profundidad de secuenciación   | 19 - 24 M seq                  |
+| de cada transcriptoma          |                                |
++--------------------------------+--------------------------------+
+| Tamaño de las lecturas         | 148 bp                         |
++--------------------------------+--------------------------------+
+| Artículo científico            | Zhao Z, Yu P, Wang Y, Li H et  |
+|                                | al. Silencing of STEAP3        |
+|                                | suppresses cervical cancer     |
+|                                | cell proliferation and         |
+|                                | migration via JAK/STAT3        |
+|                                | signaling pathway. Cancer      |
+|                                | Metab 2024 Dec 30;12(1):40. PM |
+|                                | ID: [3973 675                  |
+|                                | 1](htt%20%20%20%20             |
+|                                | p%%2020s:%20%20//%20%%2020www% |
+|                                | 20%20.%20n%%202%200c%20bi.n%20 |
+|                                | %%2020%20l%20m.n%20i%2%200%%%2 |
+|                                | 02020h.%20g%%2%200%2020o%20%20 |
+|                                | v/p%20%20ub%20med/%203%20%209% |
+|                                | %2%20020%207%2%20%2003%20%20%% |
+|                                | 202%200%206%207%%20%20%202%200 |
+|                                | 5%201 "Link to PubMed record") |
++--------------------------------+--------------------------------+
 
 : Tabla 1: Detalles del Bioproyecto y características de las muestras
+
+## Resumen del BioProject
 
 El artículo “Silencing of STEAP3 suppresses cervical cancer cell
 proliferation and migration via JAK/STAT3 signaling pathway” propone
@@ -125,30 +129,29 @@ obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 19M - 24.7M.
 
-![Contenido de GC](img-multiqc1/fastqc_per_sequence_gc_content_plot.png)
+![Contenido de GC](images/fastqc_per_sequence_gc_content_plot.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 35. De igual forma, las muestras tienen un promedio de
 calidad con un pico máximo en Phred 36.
 
-![Calidad por
-base](img-multiqc1/fastqc_per_base_sequence_quality_plot.png)
+![Calidad por base](images/fastqc_per_base_sequence_quality_plot.png)
 
 ![Calidad por
-secuencia](img-multiqc1/fastqc_per_sequence_quality_scores_plot.png)
+secuencia](images/fastqc_per_sequence_quality_scores_plot.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores.
 
-![](img-multiqc1/fastqc_per_base_n_content_plot.png)
+![](images/fastqc_per_base_n_content_plot.png)
 
 Sin embargo, se identificaron secuencias duplicadas, que posiblemente
 puedan estar relacionadas con la presencia de dímeros de adaptadores.
 
 ![Secuencias
-duplicadas](img-multiqc1/fastqc_sequence_duplication_levels_plot.png)
+duplicadas](images/fastqc_sequence_duplication_levels_plot.png)
 
 ## Conclusión de la calidad de los datos crudos
 
@@ -170,17 +173,17 @@ normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 17.9M - 23.2M.
 
 ![Contenido de GC
-(procesado)](img-multiqc2/fastqc_per_sequence_gc_content_plot.png)
+(procesado)](images/fastqc_per_sequence_gc_content_plot-01.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 36.
 
 ![Calidad por base
-(procesado)](img-multiqc2/fastqc_per_base_sequence_quality_plot.png)
+(procesado)](images/fastqc_per_base_sequence_quality_plot-01.png)
 
 ![Calidad por secuencia
-(procesado)](img-multiqc2/fastqc_per_sequence_quality_scores_plot.png)
+(procesado)](images/fastqc_per_sequence_quality_scores_plot-01.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
@@ -188,13 +191,13 @@ no se encontraron muestras con contaminación de adaptadores los cuales
 fueron removidos utilizando `trimmomatic`.
 
 ![Contenido por base de la secuencia
-(procesado)](img-multiqc2/fastqc_per_base_n_content_plot.png)
+(procesado)](images/fastqc_per_base_n_content_plot-01.png)
 
 La presencia de secuencias duplicadas se mantuvo como una prueba
 fallida, sin embargo, son resultados esperados al realizar RNA-seq.
 
 ![Secuencias duplicadas
-(procesado)](img-multiqc2/fastqc_sequence_duplication_levels_plot.png)
+(procesado)](images/fastqc_sequence_duplication_levels_plot-01.png)
 
 Se encuentra un sesgo en las primeras 15 bases en la gráfica de Per base
 sequence content, sin embargo, se reporta que es normal para RNA-seq.
@@ -211,210 +214,79 @@ procesados) se mantuvo igual.
 
 # Diagrama de flujo de trabajo
 
-![](_Diagrama%20de%20flujo.png)
+![](images/_Diagrama%20de%20flujo.png)
 
-![](_Diagrama%20de%20flujo2.png)
+![](images/STAR.png)
 
-# Importación de los datos en R
+# Alineamiento de Secuencias
 
-Podemos realizar el análisis con R tanto dentro del cluster, como en
-nuestra computadora personal. En nuestro caso realizamos ambos, pero
-mostraremos el personal.
+Previo a realizar el alineamiento, se obtuvo el genoma de referencia y
+se indexó. El script correspondiente al indexado se puede encontrar
+dentro del GitHub, en la ruta `scripts/05_STAR_index.sh`
 
-Primero, descargamos el output del alineamiento de STAR a nuestra
-computadora personal para visualizarlo de forma fácil.
+Realizamos el alineamiento con STAR con las secuencias de los datos
+procesados. El script correspondiente al alineamiento se puede encontrar
+dentro del GitHub, en la ruta `scripts/06_STAR_align.sh`
 
-``` bash
-rsync -avz ysosa@ken.lavis.unam.mx:/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output/ .
-```
+# Predicción de cuentas
 
-```{r message=FALSE, warning=FALSE}
-# Cargar paquetes
-library(tximport)
-library(DESeq2)
-library(dplyr)
+Posterior al alineamiento con STAR, es necesario importar los datos
+provenientes de este a R para el posterior análisis de Expresion
+diferencial con DESEq2. En nuestro caso, realizamos el análisis con R
+dentro del cluster.
 
-# Arreglar espacio de trabajo
-setwd('C:/Users/Dell/Documents/bioinfo2/eve-coss/')
-workdir <- 'C:/Users/Dell/Documents/bioinfo2/eve-coss/'
-metadata <- df
-samples <- metadata$SampleID
-filedir <- 'STAR/'
-indir <- 'STAR/'
+El script correspondiente al alineamiento se puede encontrar dentro del
+GitHub, en la ruta `scripts/07_Load_data_STAR.R`
 
-# Cargar todos los archivos de cuentas obtenidos
-files <- c()
-files <- list.files(
-  path = 'C:/Users/Dell/Documents/bioinfo2/eve-coss/STAR',
-  pattern = "ReadsPerGene.out.tab$",
-  full.names = TRUE
-)
+Al terminar este script, contamos con una matriz de cuentas crudas de
+los datos y cargamos los metadatos.
 
-# Confirmar numero de transcriptomas
-cat("Número de transcriptomas: ", length(files), "\n")
-# [1] 6 -> Correcto
+# Expresión diferencial
 
-# Checar que tengamos todos los archivos
-names(files) <- samples
-cat("¿Se tienen todas las muestras? ", all(file.exists(files)), "\n")
-# [1] TRUE
+Buscamos hacer nuestro análisis de exprsión diferencial a partir de los
+datos obtenidos. El script correspondiente se puede encontrar dentro del
+GitHub, en la ruta `scripts/09_DEG_STAR_KD.R`
 
-### Cuantificacion por genes ###
-# Función que lee cada archivo, obtiene gen y conteos
-read_star <- function(file, col = 2) {
-  df <- read.table(file, header = FALSE, skip = 4)  # Salta las 4 lineas de summary
-  
-  # Escoge la columna 1 (gen) y 2 (conteos totales = forward + reverse), y renombra
-  setNames(df[, c(1, col)], c("gene", "counts"))
-}
+Cargamos nuestra matriz de cuentas crudas generada y la metadata. Para,
+posteriormente, seleccionar los genes con más de 10 cuentas.
 
-## Construir matriz de cuentas
-# Hace una lista de dataframes con genes y conteos, de cada muestra
-count_list <- lapply(files, read_star, col = 2)
-# Une columnas de cuentas en una matriz
-count_matrix <- do.call(cbind, lapply(count_list, `[[`, "counts"))
-# Nombres de filas son IDs de genes
-rownames(count_matrix) <- count_list[[1]]$gene
-# Nombres de columnas son muestras
-colnames(count_matrix) <- names(files)
+Al convertirlas al formato dds, observamos que teníamos 6 muestras y
+17266 genes hasta este punto. Para después realizar las comparaciones,
+indicando cual es la referencia ("WT"). Guardamos el resultado de la
+salida en el archivo `STEAP3_KD_vs_WT.RData` .
 
-# Armar objeto txi manualmente para mantener compatibilidad con el resto del script
-txi <- list(
-  counts = count_matrix,
-  abundance = count_matrix,  # STAR no da TPM, se usa counts como proxy
-  length = matrix(1, nrow = nrow(count_matrix), ncol = ncol(count_matrix),
-                  dimnames = dimnames(count_matrix)), # Matriz de 1's 
-  countsFromAbundance = "no" #No son conteos de abundancia, sino directos
-)
+Posteriormente, hicimos la normalización de los datos para evitar sesgos
+técnicos y biológicos. Utilizamos la función `rlog` debido a que tenemos
+pocas muestras (\<30).
 
-print("Elementos del txi")
-names(txi)
-# Verificamos que se ve objeto correctamente
-print("Ejemplo de cuentas del txi")
-head(txi$counts, 2)
+Finalmente, pudimos detectar un Batch Effect tras hacer el PCA de las
+cuentas, donde podemos notar las diferencias entre muestras con las
+componentes que explican la mayor cantidad de varianza en nuestros
+datos.
 
-# Verificacion de dimensiones y que nombres de muestras coindicen
-metadata$replica_biologica <- as.factor(metadata$replica_biologica)
-rownames(metadata) <- colnames(txi$counts)
-# all(rownames(metadata) == metadata$sample_ID)
-# [1] TRUE
+[IMAGEN DEL PCA]
 
-# Convertir a factor para usar DESeq2
-metadata[sapply(metadata, is.character)] <- lapply(metadata[sapply(metadata, is.character)], as.factor)
-metadata[sapply(metadata, is.integer)] <- lapply(metadata[sapply(metadata, is.integer)], as.factor)
-metadata[sapply(metadata, is.numeric)] <- lapply(metadata[sapply(metadata, is.numeric)], as.factor)
+Obtuvimos la información del único contraste entre Wild-Type y
+Knockdown, y guardamos los resultados en el archivio `DE_KD_vs_WT.csv`.
+Dentro de él podemos observar que en el resumen se reportan 744 genes
+con un LFC \> 0, y 825 con un LFC \< 0.
 
-# Guardar cuentas
-# Solo si no existe el directorio
-# dir.create(paste0(workdir, 'counts/'), recursive = TRUE, showWarnings = FALSE)
-save(metadata, txi, file = paste0(workdir, 'counts/txi.RData'))
+## Visualización de los datos
 
-cat("Dimensiones del archivo de cuentas: ", dim(txi$counts)[1], "genes totales, ", dim(txi$counts)[2], "transcriptomas \n")
+Algunas de las gráficas generadas a partir de estos datos se muestran a
+continuación.
 
-```
+Previamente, se filtraron los genes que tuvieran un p-valor ajustado
+menor al 0.05. Y, sumado a ello, para clasificarlos como up-regulated
+que tuvieran LFC \>= 2, y para down-regulated LFC \<= 2.
 
-Después de realizar el conteo, observamos que las dimensiones del
-archivo fueron de 49 242 genes totales, de los 6 transcriptomas de
-nuestro experimento. Pero, aun podemos realizar un filtrado.
+Para el Volcano Plot, observamos 3 genes down-regulated y 12 genes
+up-regulated.
 
-Debemos descargar el archivo `Ensembldb.RData` con la base de datos de
-Ensembl para poder eliminar los transcritos ribosomales.
+[FIGURA VOLCANO PLOT]
 
-``` r
-# ---- Libraries ----
-library(biomaRt) # Base de datos de Ensembl
+Por otro lado, realizamos un Heatmap, donde obtuvimos los 20 genes con
+el p-valor más significativo, y creamos un filtro donde el 3 fuera el
+máximo para evitar sesgar los resultados por los outliers.
 
-# --- load data ----
-outdir <- 'C:/Users/Dell/Documents/bioinfo2/eve-coss/' 
-
-# --- load Ensembl database -------------------
-
-# select data of Human from Ensembl database
-ensembl <- useEnsembl(biomart = "ensembl", 
-                      dataset = "hsapiens_gene_ensembl", 
-                      mirror = "useast")
-
-# All Attributes
-attributes <- listAttributes(ensembl)
-# attributes
-
-# select attributes
-attributes <- c("ensembl_gene_id","chromosome_name","start_position","end_position","external_gene_name",
-                "hgnc_symbol", "gene_biotype", "go_id", "name_1006")
-
-# extract information
-annotations_ENSG <- getBM(attributes=attributes, mart=ensembl)
-
-# Biotype
-table(annotations_ENSG$gene_biotype)
-
-# save graph
-save(annotations_ENSG, file = paste0(outdir, "Ensembldb.RData"))
-```
-
-Ya que tenemos el archivo, podemos proceder a eliminar los transcritos
-ribosomales.
-
-```{r message=FALSE, warning=FALSE}
-### Eliminar genes ribosomales ###
-# Cargar dataset de Ensembl
-load(paste0(workdir, "Ensembldb.RData"))
-# Extrae nombre del gen y biotipo
-hsapiens_biotype <- dplyr::select(annotations_ENSG, hgnc_symbol, gene_biotype)
-# Elimina duplicados
-hsapiens_biotype <- hsapiens_biotype %>% distinct()
-# Renombra columna hgnc_symbol a gene
-colnames(hsapiens_biotype)[1] <- "gene"
-
-# Obtiene nombres de genes de nuestras muestras
-all_genes <- rownames(txi$abundance) 
-# Número de genes totales: [1] 49242
-
-# Filtrar genes que tienen biotipo y clasificarlos
-my_biotypes <- hsapiens_biotype[hsapiens_biotype$gene %in% all_genes,]
-dim(my_biotypes) # [1] 28205     2
-cat("Genes del experimento con biotipo anotado: ", dim(my_biotypes)[1], "\n")
-
-# Convierte biotipos en factores
-cat("Biotipos:\n")
-levels(as.factor(my_biotypes$gene_biotype))
-# [1] "IG_V_gene"                          "IG_V_pseudogene"                    "lncRNA"                             "miRNA"                             
-# [5] "misc_RNA"                           "processed_pseudogene"               "protein_coding"                     "ribozyme"                          
-# [9] "rRNA"                               "scaRNA"                             "snoRNA"                             "snRNA"                             
-#[13] "TEC"                                "transcribed_processed_pseudogene"   "transcribed_unitary_pseudogene"     "transcribed_unprocessed_pseudogene"
-#[17] "unitary_pseudogene"                 "unprocessed_pseudogene"             "vault_RNA"                         
-
-# Filtra biotipos para eliminar RNA ribosomal, ribozimas y vault rna
-filtered_biotypes <- my_biotypes[!(my_biotypes$gene_biotype %in% c('vault_RNA','rRNA', 'ribozyme')), ]
-dim(filtered_biotypes) # [1] 28177     2
-
-# Extraer lista de nombres de genes filtrados y verificar que están en nuestro experimento
-filtered_genes <- filtered_biotypes$gene
-filtered_genes <- all_genes[all_genes %in% filtered_genes] 
-length(filtered_genes) # [1] 27918
-
-# Elimina elemento countsFromAbundance
-txi_minuslast <- txi[-length(txi)]
-# Filtrar objeto taxi para conservar únicamente genes que pasaron filtros
-filtered_txi <- lapply(txi_minuslast, function(df) {
-  # print(head(rownames(df)))
-  df[rownames(df) %in% filtered_genes, ]
-})
-
-# Renombrar columnas y agregar nuevamente countsFromAbundance
-names(filtered_txi) <- c("abundance" , "counts","length")
-filtered_txi$countsFromAbundance <- "no"
-dim(filtered_txi$counts) # [1] 27918     6
-cat("Dimensiones finales del archivo: ", dim(filtered_txi$counts)[1], "genes filtrados", dim(filtered_txi$counts)[2], "muestras", "\n")
-
-# Guardar archivo sin ribosomales
-save(filtered_txi, metadata, file = paste0(workdir, 'counts/txi_filtered.RData'))
-
-# Registra versiones de R y paquetes
-cat("Versiones de paquetes utilizados: \n")
-sessionInfo()
-
-```
-
-Concluimos que las dimensiones del archivo final son 27918 genes
-filtrados, de 6 muestras distintas.
+[FIGURA HEATMAP]
