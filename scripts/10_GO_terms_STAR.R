@@ -205,3 +205,49 @@ g.up <- ggplot(bar_data_up_ordered_mod, aes(p.val, reorder(term, -num), fill = c
 # Guardar la figura
 ggsave(paste0(figdir, "barplotUP_GO_", plot_name, ".png"),
        plot = g.up + theme_classic(), dpi = 600, width = 10, height = 5)
+
+# --- Juntar todos los DEGs ---
+deg_genes <- df %>% filter(Expression != "Unchanged")
+gene_symbols <- rownames(deg_genes)
+
+# --- Conversión a Entrez ID para KEGG ---
+gene_entrez <- bitr(gene_symbols,
+                    fromType = "SYMBOL",
+                    toType   = "ENTREZID",
+                    OrgDb    = org.Hs.eg.db)
+
+# --- KEGG enrichment ---
+kegg_res <- enrichKEGG(gene         = gene_entrez$ENTREZID,
+                       organism     = "hsa",
+                       pvalueCutoff = 1,
+                       pAdjustMethod = "fdr") # el artículo usaba FDR
+
+kegg_df <- as.data.frame(kegg_res) %>%
+  mutate(
+    S           = as.integer(sub("/.*", "", GeneRatio)), # genes nuestros en el pathway
+    B           = as.integer(sub("/.*", "", BgRatio)), # genes totales del pathway en KEGG
+    Rich_Factor = round(S / B, 4)
+  ) %>%
+  # Convertir Entrez IDs de vuelta a símbolos en la columna geneID
+  rowwise() %>%
+  mutate(
+    gene_symbols_col = {
+      ids  <- strsplit(geneID, "/")[[1]]
+      syms <- bitr(ids, fromType = "ENTREZID", toType = "SYMBOL", OrgDb = org.Hs.eg.db)
+      paste(syms$SYMBOL, collapse = ", ")
+    }
+  ) %>%
+  ungroup() %>%
+  dplyr::select(
+    `Pathway ID`   = ID,
+    `Pathway Name` = Description,
+    `S`            = S,
+    `B`            = B,
+    `Rich Factor`  = Rich_Factor,
+    `P value`      = pvalue,
+    `Genes`        = gene_symbols_col
+  ) %>%
+  filter(`P value` < 0.05) %>% #filtramos por p-value porque pvalueCutoff = 0.05 daba errores
+  arrange(`P value`)
+
+write.csv(kegg_df, file = paste0(outdir, "KEGG_enrichment_KD_vs_WT.csv"), row.names = FALSE)
