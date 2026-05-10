@@ -172,7 +172,7 @@ bar_data_up_ordered$p.val <- round(-log10(bar_data_up_ordered$p.adjust), 2)
 bar_data_up_ordered$num <- seq(1:nrow(bar_data_up_ordered)) # num category for plot
 
 # Guardar dataset
-save(bar_data_up_ordered, file = paste0(outdir, "UP_GO_", plot_name, ".RData"))
+write.csv(bar_data_up_ordered, file = paste0(outdir, "UP_GO_", plot_name, ".RData"))
 
 # agregar colores para la grafica
 bar_data_up_ordered_mod <- left_join(bar_data_up_ordered, Category_colors, by= "category")

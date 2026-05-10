@@ -225,56 +225,61 @@ dentro del GitHub, en la ruta `scripts/06_STAR_align.sh`.
 
 Posterior al alineamiento con STAR, es necesario importar los datos
 provenientes de este a R para el posterior análisis de Expresion
-diferencial con DESEq2. En nuestro caso, realizamos el análisis con R versión 4.4.1
-dentro del cluster.
+diferencial con DESEq2. En nuestro caso, realizamos el análisis con R versión 
+4.4.1 dentro del cluster.
 
 El script correspondiente al alineamiento se puede encontrar dentro del
 GitHub, en la ruta `scripts/07_Load_data_STAR.R`
 
 Al terminar este script, contamos con una matriz de cuentas crudas de
-los datos y cargamos los metadatos.
+los datos y cargamos los metadatos. Ambos se encuentran en la ruta de github 
+`results/counts/raw_counts.RData` como un dataset de R para cargar.
 
 # Expresión diferencial
 
-Buscamos hacer nuestro análisis de exprsión diferencial a partir de los
-datos obtenidos. El script correspondiente se puede encontrar dentro del
-GitHub, en la ruta `scripts/09_DEG_STAR_KD.R`
+Buscamos hacer nuestro análisis de exprsión diferencial a partir de la matriz de
+cuentas obtenida. El script correspondiente se puede encontrar dentro del
+GitHub, en la ruta `scripts/09_DEG_STAR_KD.R`.
 
-Cargamos nuestra matriz de cuentas crudas generada y la metadata. Para,
+Cargamos nuestra matriz de cuentas crudas generada y la metadata para
 posteriormente, seleccionar los genes con más de 10 cuentas.
 
 Al convertirlas al formato dds, observamos que teníamos 6 muestras y
 17266 genes hasta este punto. Para después realizar las comparaciones,
 indicando cual es la referencia ("WT"). Guardamos el resultado de la
-salida en el archivo `STEAP3_KD_vs_WT.RData` .
+salida en el archivo `results/STEAP3_KD_vs_WT.RData` el cual contiene la 
+metadata y el archivo dds.
 
 Posteriormente, hicimos la normalización de los datos para evitar sesgos
 técnicos y biológicos. Utilizamos la función `rlog` debido a que tenemos
 pocas muestras (\<30).
 
-Finalmente, pudimos detectar un Batch Effect tras hacer el PCA de las
+Finalmente, pudimos detectar que no hay Batch Effect tras hacer el PCA de las
 cuentas, donde podemos notar las diferencias entre muestras con las
 componentes que explican la mayor cantidad de varianza en nuestros
-datos.
+datos, donde se observa que se agrupan las muestras control (WT) y dos de 
+las muestras de células con knockdown del gen STEAP3 se agrupan mientras 
+que la muestra restante de los casos se encuentra alejada de todas las demás.
 
 [IMAGEN DEL PCA]
 
 Obtuvimos la información del único contraste entre Wild-Type y
-Knockdown, y guardamos los resultados en el archivio `DE_KD_vs_WT.csv`.
+Knockdown, y guardamos los resultados en el archivio `results/DE_KD_vs_WT.csv`.
 Dentro de él podemos observar que en el resumen se reportan 744 genes
-con un LFC \> 0, y 825 con un LFC \< 0.
+con un LFC > 0, y 825 con un LFC < 0.
 
 ## Visualización de los datos
 
-Algunas de las gráficas generadas a partir de estos datos se muestran a
+Algunas de las gráficas generadas a partir de estos datos con gse muestran a
 continuación.
 
 Previamente, se filtraron los genes que tuvieran un p-valor ajustado
-menor al 0.05. Y, sumado a ello, para clasificarlos como up-regulated
-que tuvieran LFC \>= 2, y para down-regulated LFC \<= 2.
+menor a 0.05. Y, sumado a ello, para clasificarlos como up-regulated
+que tuvieran LFC ≥ 2, y para down-regulated LFC ≤ 2.
 
 Para el Volcano Plot, observamos 3 genes down-regulated y 12 genes
-up-regulated.
+up-regulated. El gen down-regulated con mayor p-value es STEAP3 y el gen 
+up-regulated con mayor p-value es SERPINB3.
 
 [FIGURA VOLCANO PLOT]
 
