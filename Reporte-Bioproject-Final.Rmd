@@ -23,60 +23,65 @@ editor_options:
 
 # Descripción de los datos
 
-+--------------------------------+--------------------------------+
-| Descripción                    | Información                    |
-+================================+================================+
-| BioProject                     | PRJNA1198873                   |
-+--------------------------------+--------------------------------+
-| Especie                        | *Homo sapiens*                 |
-+--------------------------------+--------------------------------+
-| Tipo de bibliotecas            | *paired-end*                   |
-+--------------------------------+--------------------------------+
-| Método de selección            | Purificación de transcritos    |
-|                                | poliadenilados (poli-A)        |
-+--------------------------------+--------------------------------+
-| Número de transcriptomas       | 6                              |
-+--------------------------------+--------------------------------+
-| Número de réplicas biológicas  | 3 replicas biológicas por      |
-|                                | condición (control y           |
-|                                | knockdown)                     |
-+--------------------------------+--------------------------------+
-| Secuenciador empleado          | Illumina NovaSeq 6000          |
-+--------------------------------+--------------------------------+
-| Distribución de las muestras   | -   **Control**: 3 réplicas    |
-|                                |     biológicas WT              |
-|                                |     (SRR31732089, SRR31732090, |
-|                                |     SRR31732091)               |
-|                                |                                |
-|                                | -   **Sobreexpresión**: 3      |
-|                                |     réplicas biológicas con    |
-|                                |     knockdown de *STEAP3*      |
-|                                |     (SRR31732086, SRR31732087, |
-|                                |     SRR31732088)\n             |
-+--------------------------------+--------------------------------+
-| Profundidad de secuenciación   | 19 - 24 M seq                  |
-| de cada transcriptoma          |                                |
-+--------------------------------+--------------------------------+
-| Tamaño de las lecturas         | 148 bp                         |
-+--------------------------------+--------------------------------+
-| Artículo científico            | Zhao Z, Yu P, Wang Y, Li H et  |
-|                                | al. Silencing of STEAP3        |
-|                                | suppresses cervical cancer     |
-|                                | cell proliferation and         |
-|                                | migration via JAK/STAT3        |
-|                                | signaling pathway. Cancer      |
-|                                | Metab 2024 Dec 30;12(1):40. PM |
-|                                | ID: [3973 675                  |
-|                                | 1](htt%20%20%20%20             |
-|                                | p%%2020s:%20%20//%20%%2020www% |
-|                                | 20%20.%20n%%202%200c%20bi.n%20 |
-|                                | %%2020%20l%20m.n%20i%2%200%%%2 |
-|                                | 02020h.%20g%%2%200%2020o%20%20 |
-|                                | v/p%20%20ub%20med/%203%20%209% |
-|                                | %2%20020%207%2%20%2003%20%20%% |
-|                                | 202%200%206%207%%20%20%202%200 |
-|                                | 5%201 "Link to PubMed record") |
-+--------------------------------+--------------------------------+
++------------------------------+------------------------------+
+| Descripción                  | Información                  |
++==============================+==============================+
+| BioProject                   | PRJNA1198873                 |
++------------------------------+------------------------------+
+| Especie                      | *Homo sapiens*               |
++------------------------------+------------------------------+
+| Tipo de bibliotecas          | *paired-end*                 |
++------------------------------+------------------------------+
+| Método de selección          | Purificación de transcritos  |
+|                              | poliadenilados (poli-A)      |
++------------------------------+------------------------------+
+| Número de transcriptomas     | 6                            |
++------------------------------+------------------------------+
+| Número de réplicas           | 3 replicas biológicas por    |
+| biológicas                   | condición (control y         |
+|                              | knockdown)                   |
++------------------------------+------------------------------+
+| Secuenciador empleado        | Illumina NovaSeq 6000        |
++------------------------------+------------------------------+
+| Distribución de las muestras | -   **Control**: 3 réplicas  |
+|                              |     biológicas WT            |
+|                              |     (SRR31732089,            |
+|                              |     SRR31732090,             |
+|                              |     SRR31732091)             |
+|                              |                              |
+|                              | -   **Sobreexpresión**: 3    |
+|                              |     réplicas biológicas con  |
+|                              |     knockdown de *STEAP3*    |
+|                              |     (SRR31732086,            |
+|                              |     SRR31732087,             |
+|                              |     SRR31732088)\n           |
++------------------------------+------------------------------+
+| Profundidad de secuenciación | 19 - 24 M seq                |
+| de cada transcriptoma        |                              |
++------------------------------+------------------------------+
+| Tamaño de las lecturas       | 148 bp                       |
++------------------------------+------------------------------+
+| Artículo científico          | Zhao Z, Yu P, Wang Y, Li H   |
+|                              | et al. Silencing of STEAP3   |
+|                              | suppresses cervical cancer   |
+|                              | cell proliferation and       |
+|                              | migration via JAK/STAT3      |
+|                              | signaling pathway. Cancer    |
+|                              | Metab 2024 Dec 30;12(1):40.  |
+|                              | PM ID: [3973 675             |
+|                              | 1                            |
+|                              | ](htt%20%20%20%20%20%20p%%20 |
+|                              | 20s:%20%20//%20%%2020www%20% |
+|                              | %2020%20.%20n%%202%200c%20bi |
+|                              | %20.n%20%20%%2020%20l%20m.n% |
+|                              | 20i%%202%200%%%2%2002020h.%2 |
+|                              | 0g%%2%20%200%2020o%20%20%20v |
+|                              | /p%20%20ub%2%200med/%203%20% |
+|                              | 209%%20%2%20020%%20207%2%20% |
+|                              | 2003%20%20%%%20202%2%2000%20 |
+|                              | 6%207%%20%20%202%200%205%20% |
+|                              | 201 "Link to PubMed record") |
++------------------------------+------------------------------+
 
 : Tabla 1: Detalles del Bioproyecto y características de las muestras
 
@@ -122,6 +127,12 @@ datatable(
 )
 ```
 
+# Diagrama de flujo de trabajo
+
+![](images/_Diagrama%20de%20flujo.png)
+
+![](images/STAR.png)
+
 # Calidad de las secuencias de los datos crudos
 
 Se realizó el análisis de calidad de las 6 muestras seleccionadas. Se
@@ -138,7 +149,8 @@ calidad con un pico máximo en Phred 36.
 
 ![Calidad por base](images/fastqc_per_base_sequence_quality_plot.png)
 
-![Calidad por secuencia](images/fastqc_per_sequence_quality_scores_plot.png)
+![Calidad por
+secuencia](images/fastqc_per_sequence_quality_scores_plot.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
@@ -149,7 +161,8 @@ no se encontraron muestras con contaminación de adaptadores.
 Sin embargo, se identificaron secuencias duplicadas, que posiblemente
 puedan estar relacionadas con la presencia de dímeros de adaptadores.
 
-![Secuencias duplicadas](images/fastqc_sequence_duplication_levels_plot.png)
+![Secuencias
+duplicadas](images/fastqc_sequence_duplication_levels_plot.png)
 
 ## Conclusión de la calidad de los datos crudos
 
@@ -170,27 +183,32 @@ obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 17.9M - 23.2M.
 
-![Contenido de GC (procesado)](images/fastqc_per_sequence_gc_content_plot-01.png)
+![Contenido de GC
+(procesado)](images/fastqc_per_sequence_gc_content_plot-01.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 36.
 
-![Calidad por base (procesado)](images/fastqc_per_base_sequence_quality_plot-01.png)
+![Calidad por base
+(procesado)](images/fastqc_per_base_sequence_quality_plot-01.png)
 
-![Calidad por secuencia (procesado)](images/fastqc_per_sequence_quality_scores_plot-01.png)
+![Calidad por secuencia
+(procesado)](images/fastqc_per_sequence_quality_scores_plot-01.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores los cuales
 fueron removidos utilizando `trimmomatic` versión 0.33.
 
-![Contenido por base de la secuencia (procesado)](images/fastqc_per_base_n_content_plot-01.png)
+![Contenido por base de la secuencia
+(procesado)](images/fastqc_per_base_n_content_plot-01.png)
 
 La presencia de secuencias duplicadas se mantuvo como una prueba
 fallida, sin embargo, son resultados esperados al realizar RNA-seq.
 
-![Secuencias duplicadas (procesado)](images/fastqc_sequence_duplication_levels_plot-01.png)
+![Secuencias duplicadas
+(procesado)](images/fastqc_sequence_duplication_levels_plot-01.png)
 
 Se encuentra un sesgo en las primeras 15 bases en la gráfica de Per base
 sequence content, sin embargo, se reporta que es normal para RNA-seq.
@@ -204,12 +222,6 @@ adaptadores, por lo cuál indica que fueron removidos.
 
 El tamaño de las reads iniciales (datos crudos) y las finales (datos
 procesados) se mantuvo igual.
-
-# Diagrama de flujo de trabajo
-
-![](images/_Diagrama%20de%20flujo.png)
-
-![](images/STAR.png)
 
 # Alineamiento de Secuencias
 
@@ -225,21 +237,22 @@ dentro del GitHub, en la ruta `scripts/06_STAR_align.sh`.
 
 Posterior al alineamiento con STAR, es necesario importar los datos
 provenientes de este a R para el posterior análisis de Expresion
-diferencial con DESEq2. En nuestro caso, realizamos el análisis con R versión 
-4.4.1 dentro del cluster.
+diferencial con DESEq2. En nuestro caso, realizamos el análisis con R
+versión 4.4.1 dentro del cluster.
 
 El script correspondiente al alineamiento se puede encontrar dentro del
 GitHub, en la ruta `scripts/07_Load_data_STAR.R`
 
 Al terminar este script, contamos con una matriz de cuentas crudas de
-los datos y cargamos los metadatos. Ambos se encuentran en la ruta de github 
-`results/counts/raw_counts.RData` como un dataset de R para cargar.
+los datos y cargamos los metadatos. Ambos se encuentran en la ruta de
+github `results/counts/raw_counts.RData` como un dataset de R para
+cargar.
 
 # Expresión diferencial
 
-Buscamos hacer nuestro análisis de exprsión diferencial a partir de la matriz de
-cuentas obtenida. El script correspondiente se puede encontrar dentro del
-GitHub, en la ruta `scripts/09_DEG_STAR_KD.R`.
+Buscamos hacer nuestro análisis de exprsión diferencial a partir de la
+matriz de cuentas obtenida. El script correspondiente se puede encontrar
+dentro del GitHub, en la ruta `scripts/09_DEG_STAR_KD.R`.
 
 Cargamos nuestra matriz de cuentas crudas generada y la metadata para
 posteriormente, seleccionar los genes con más de 10 cuentas.
@@ -247,44 +260,117 @@ posteriormente, seleccionar los genes con más de 10 cuentas.
 Al convertirlas al formato dds, observamos que teníamos 6 muestras y
 17266 genes hasta este punto. Para después realizar las comparaciones,
 indicando cual es la referencia ("WT"). Guardamos el resultado de la
-salida en el archivo `results/STEAP3_KD_vs_WT.RData` el cual contiene la 
+salida en el archivo `results/STEAP3_KD_vs_WT.RData` el cual contiene la
 metadata y el archivo dds.
 
 Posteriormente, hicimos la normalización de los datos para evitar sesgos
 técnicos y biológicos. Utilizamos la función `rlog` debido a que tenemos
 pocas muestras (\<30).
 
-Finalmente, pudimos detectar que no hay Batch Effect tras hacer el PCA de las
-cuentas, donde podemos notar las diferencias entre muestras con las
-componentes que explican la mayor cantidad de varianza en nuestros
-datos, donde se observa que se agrupan las muestras control (WT) y dos de 
-las muestras de células con knockdown del gen STEAP3 se agrupan mientras 
-que la muestra restante de los casos se encuentra alejada de todas las demás.
+Finalmente, pudimos detectar que no hay Batch Effect tras hacer el PCA
+de las cuentas, donde podemos notar las diferencias entre muestras con
+las componentes que explican la mayor cantidad de varianza en nuestros
+datos, donde se observa que se agrupan las muestras control (WT) y dos
+de las muestras de células con knockdown del gen STEAP3 se agrupan
+mientras que la muestra restante de los casos se encuentra alejada de
+todas las demás.
 
-[IMAGEN DEL PCA]
+![PCA, Wild Type y Knockdown](results/figures/PCA_rlog.png)
 
 Obtuvimos la información del único contraste entre Wild-Type y
-Knockdown, y guardamos los resultados en el archivio `results/DE_KD_vs_WT.csv`.
-Dentro de él podemos observar que en el resumen se reportan 744 genes
-con un LFC > 0, y 825 con un LFC < 0.
+Knockdown, y guardamos los resultados en el archivio
+`results/DE_KD_vs_WT.csv`. Dentro de él podemos observar que en el
+resumen se reportan 744 genes con un LFC \> 0, y 825 con un LFC \< 0.
 
 ## Visualización de los datos
 
-Algunas de las gráficas generadas a partir de estos datos con gse muestran a
+Algunas de las gráficas generadas a partir de estos datos se muestran a
 continuación.
 
 Previamente, se filtraron los genes que tuvieran un p-valor ajustado
-menor a 0.05. Y, sumado a ello, para clasificarlos como up-regulated
-que tuvieran LFC ≥ 2, y para down-regulated LFC ≤ 2.
+menor a 0.05. Y, sumado a ello, para clasificarlos como up-regulated que
+tuvieran LFC ≥ 2, y para down-regulated LFC ≤ 2.
 
 Para el Volcano Plot, observamos 3 genes down-regulated y 12 genes
-up-regulated. El gen down-regulated con mayor p-value es STEAP3 y el gen 
-up-regulated con mayor p-value es SERPINB3.
+up-regulated. El gen down-regulated con mayor p-value es *STEAP3* y el
+gen up-regulated con mayor p-value es *SERPINB3*.
 
-[FIGURA VOLCANO PLOT]
+![Volcano Plot](results/figures/VolcanoPlot_KD_vs_WT.png)
 
 Por otro lado, realizamos un Heatmap, donde obtuvimos los 20 genes con
-el p-valor más significativo, y creamos un filtro donde el 3 fuera el
-máximo para evitar sesgar los resultados por los outliers.
+el p-valor más significativo, y creamos un filtro donde el Log Fold
+Change máximo fuera 3, de esta manera evitamos sesgar los resultados por
+los outliers.
 
-[FIGURA HEATMAP]
+![Heatmap](results/figures/Heatmap_KD_vs_WT.png)
+
+# Análisis funcional
+
+Realizamos la determinación funcional de los genes diferencialmente
+expresados a partir de los datos. El script correspondiente se puede
+encontrar dentro del GitHub, en la ruta `scripts/10_GO_terms_STAR.R`.
+
+Se realizó el mismo filtrado que realizamos en la sección de
+"Visualización de los datos" para realizar las gráficas.
+
+Primero, realizamos un Manhattan plot. Mediante este plot podemos
+observar la cantidad de vías metabólicas observadas en cada base de
+datos, representadas por un punto del color correspondiente.
+
+![Manhattan Plot](results/figures/ManhattanGO_KD_vs_WT.png)
+
+Por otro lado, también podemos realizar una gráfica de barras con la
+información de los genes down-regulated, ordenados por su p-valor y
+categoría. En esta gráfica podemos observar las vías metabólicas
+relacionadas a los genes down-regulated, y de igual forma de que base de
+datos provienen cada una de ellas.
+
+Algunas vías relacionadas a los genes que disminuyen su expresión son:
+
+-   **Ferroptosis**: una forma de muerte celular programada dependiente
+    de hierro.
+
+-   **Metabolismo del cobre y hierro:** importación de iones de cobre y
+    hierro, concentración epática elevada de hierro, transporte y
+    abosrbción de hierro, metabolismo del hierro en la placenta,
+    desórdenes del metabolismo del hierro, homesotasis del cobre,
+    saturación de la transferina (proteína que transporta hierro)
+
+-   **Crecimiento** celular y regulación de *TP53*
+
+-   **Contracción muscular**: contracción del corazón, músculo liso de
+    la vena, músculo liso arterial, músculo liso tónico, etc
+
+-   **Ciclos de GTPasas:** *RHOJ*, *RHOO*, *RHOF*, *RHOD*
+
+![Gráfica de barras de rutas metabólicas relacionadas a genes
+down-regulated](results/figures/barplotDOWN_GO_KD_vs_WT.png)
+
+De igual forma podemos observar las vías metabólicas relacionadas a los
+genes up-regulated. Algunas vías son:
+
+-   **Proteólisis**: regulación negativa de actividad de peptidasas,
+    hidrolasas, actividad catalítica y funciones moleculares
+
+-   **Respuesta inmune:** respuesta a virus, respuesta simbionte,
+    respuesta a otros organismos, estímulos bióticos o estímulos
+    externos, respuesta de defensa, regulación del sistema inmune,
+    regulación de linfocitos, respuesta a estrés, señalización autócrina
+    y parácrina
+
+![Gráfica de barras de rutas metabólicas relacionadas a genes
+up-regulated](results/figures/barplotUP_GO_KD_vs_WT.png)
+
+# Discusión
+
+# Referencias
+
+-   Zhao, Z., Yu, P., Wang, Y., Li, H., Qiao, H., Sun, C., Zhu, L., &
+    Yang, P. (2024). Silencing of STEAP3 suppresses cervical cancer cell
+    proliferation and migration via JAK/STAT3 signaling pathway. *Cancer
+    & metabolism*, *12*(1), 40.
+    <https://doi.org/10.1186/s40170-024-00370-2>
+
+-   Ferroptosis, un mecanismo de muerte celular presente en β-talasemia
+    menor. (2024). *Revista Bioquímica Y Patología Clínica*, *89*(1),
+    19-26. <https://doi.org/10.62073/k7g1yk82>
