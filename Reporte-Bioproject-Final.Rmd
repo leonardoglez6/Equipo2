@@ -15,7 +15,7 @@ editor_options:
 -   **Integrantes:**
 
     -   Leonardo González López (lgonzalez) -
-        [minestev17\@gmail.com](mailto:minestev19@gmail.com){.email},
+        [minestev17\@gmail.com](mailto:minestev17@gmail.com){.email},
     -   Efrén Nosedal González (enosedal) -
         [enosedal\@gmail.com](enosedal@gmail.com),
     -   Yuliana Denisse Sosa Gómez (ysosa) -
@@ -89,7 +89,7 @@ celular en cáncer cervical. SYEAP3 pertenece a la familia de las
 proteínas STEAP los cuáles se ha reportado que participan en la
 proliferación y metástasis del cáncer. Con RNA-seq se comparó la
 expresión de las vías de señalización en las cuáles participa STEAP3 en
-presencia de STEAP3 (NC) y con knockdown del gen (KD en células de la
+presencia de STEAP3 (NC) y con knockdown del gen (KD) en células de la
 línea celular HeLA.
 
 Se utilizaron todas las muestras del dataset, correspondiendo a 3
@@ -138,8 +138,7 @@ calidad con un pico máximo en Phred 36.
 
 ![Calidad por base](images/fastqc_per_base_sequence_quality_plot.png)
 
-![Calidad por
-secuencia](images/fastqc_per_sequence_quality_scores_plot.png)
+![Calidad por secuencia](images/fastqc_per_sequence_quality_scores_plot.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
@@ -150,8 +149,7 @@ no se encontraron muestras con contaminación de adaptadores.
 Sin embargo, se identificaron secuencias duplicadas, que posiblemente
 puedan estar relacionadas con la presencia de dímeros de adaptadores.
 
-![Secuencias
-duplicadas](images/fastqc_sequence_duplication_levels_plot.png)
+![Secuencias duplicadas](images/fastqc_sequence_duplication_levels_plot.png)
 
 ## Conclusión de la calidad de los datos crudos
 
@@ -172,39 +170,34 @@ obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 17.9M - 23.2M.
 
-![Contenido de GC
-(procesado)](images/fastqc_per_sequence_gc_content_plot-01.png)
+![Contenido de GC (procesado)](images/fastqc_per_sequence_gc_content_plot-01.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 36.
 
-![Calidad por base
-(procesado)](images/fastqc_per_base_sequence_quality_plot-01.png)
+![Calidad por base (procesado)](images/fastqc_per_base_sequence_quality_plot-01.png)
 
-![Calidad por secuencia
-(procesado)](images/fastqc_per_sequence_quality_scores_plot-01.png)
+![Calidad por secuencia (procesado)](images/fastqc_per_sequence_quality_scores_plot-01.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores los cuales
-fueron removidos utilizando `trimmomatic`.
+fueron removidos utilizando `trimmomatic` versión 0.33.
 
-![Contenido por base de la secuencia
-(procesado)](images/fastqc_per_base_n_content_plot-01.png)
+![Contenido por base de la secuencia (procesado)](images/fastqc_per_base_n_content_plot-01.png)
 
 La presencia de secuencias duplicadas se mantuvo como una prueba
 fallida, sin embargo, son resultados esperados al realizar RNA-seq.
 
-![Secuencias duplicadas
-(procesado)](images/fastqc_sequence_duplication_levels_plot-01.png)
+![Secuencias duplicadas (procesado)](images/fastqc_sequence_duplication_levels_plot-01.png)
 
 Se encuentra un sesgo en las primeras 15 bases en la gráfica de Per base
 sequence content, sin embargo, se reporta que es normal para RNA-seq.
 
 ## Conclusión de la calidad de datos procesados
 
-El procesamiento de los datos utilizando `trimmomatic` redujo la
+El procesamiento de los datos utilizando `trimmomatic` versión redujo la
 cobertura de las secuencias, indicativo que removió lecturas de mala
 calidad, y todos los reads pasaron la prueba de contenido de
 adaptadores, por lo cuál indica que fueron removidos.
@@ -222,17 +215,17 @@ procesados) se mantuvo igual.
 
 Previo a realizar el alineamiento, se obtuvo el genoma de referencia y
 se indexó. El script correspondiente al indexado se puede encontrar
-dentro del GitHub, en la ruta `scripts/05_STAR_index.sh`
+dentro del GitHub, en la ruta `scripts/05_STAR_index.sh`.
 
 Realizamos el alineamiento con STAR con las secuencias de los datos
 procesados. El script correspondiente al alineamiento se puede encontrar
-dentro del GitHub, en la ruta `scripts/06_STAR_align.sh`
+dentro del GitHub, en la ruta `scripts/06_STAR_align.sh`.
 
 # Predicción de cuentas
 
 Posterior al alineamiento con STAR, es necesario importar los datos
 provenientes de este a R para el posterior análisis de Expresion
-diferencial con DESEq2. En nuestro caso, realizamos el análisis con R
+diferencial con DESEq2. En nuestro caso, realizamos el análisis con R versión 4.4.1
 dentro del cluster.
 
 El script correspondiente al alineamiento se puede encontrar dentro del

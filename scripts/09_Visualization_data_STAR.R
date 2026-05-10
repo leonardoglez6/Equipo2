@@ -14,9 +14,9 @@
 #######
 
 # --- Load packages ----------
-library(dplyr)
-library(pheatmap)
-library(ggplot2)
+library(dplyr) #versión 1.1.4
+library(pheatmap) #versión 1.0.13
+library(ggplot2) #versión 4.0.1
 
 # --- Load data -----
 # Cargar archivos

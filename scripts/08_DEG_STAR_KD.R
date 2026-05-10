@@ -12,8 +12,8 @@
 #######
 
 # --- Load packages and specifications ----------
-library(DESeq2)
-library(ggplot2)
+library(DESeq2) #versión 1.46.0
+library(ggplot2) #versión 4.0.1
 
 # --- Load data -----
 # Cargar archivos

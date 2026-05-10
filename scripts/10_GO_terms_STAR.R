@@ -12,13 +12,13 @@
 #######
 
 # --- Load packages ----------
-library(gprofiler2)
-library(enrichplot)
-library(DOSE)
-library(clusterProfiler)
-library(ggplot2)
-library(tidyverse)
-library(dplyr)
+library(gprofiler2) #versión 0.2.4
+library(enrichplot) #versión 1.26.6
+library(DOSE) #versión 4.0.1
+library(clusterProfiler) #versión 4.14.6
+library(ggplot2) #versión 4.0.1
+library(tidyverse) #versión 2.0.0
+library(dplyr) #versión 1.1.4
 
 # --- Load data -----
 # Cargar archivos
