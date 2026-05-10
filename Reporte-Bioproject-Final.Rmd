@@ -363,6 +363,26 @@ up-regulated](results/figures/barplotUP_GO_KD_vs_WT.png)
 
 # Discusión
 
+En el artículo de origen se menciona que se obtuvieron 151 genes up-regulated
+y 91 genes down-regulated, resultado el cuál difiere bastante de lo obtenido 
+por nosotros (12 up-regulated y 3 down-regulated). Esto posiblemente puede ser 
+explicado por el hecho de que los autores originales utilizaron diferentes 
+programas a lo largo del análisis bioinformático (alineamiento con HISAT2, 
+mapeo de lecturas con StringTie, mezcla de los transcriptomas con gffcompare, 
+conteo de lecturas con StringTie y ballgown), lo cual como posible resultado 
+permitió que los autores filtraran el análisis de expresión diferencial de 
+genes (DEGs) utilizando la métrica de False Discovery Rate (FDR) con un 
+treshold de < 0.05, en lugar de aplicarlo para el p-value como se realizó en 
+este reporte, incluso al haberlo realizado con DESeq2 al igua que los autores.
+
+[IMAGEN DEL VOLCANOPLOT DEL ARTÍCULO]
+
+
+[TABLA DEL ARTÍCULO]
+
+
+[IMAGEN DEL DOTPLOT DEL ARTÍCULO]
+
 # Referencias
 
 -   Zhao, Z., Yu, P., Wang, Y., Li, H., Qiao, H., Sun, C., Zhu, L., &
