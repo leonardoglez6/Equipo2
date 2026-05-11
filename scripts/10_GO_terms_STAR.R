@@ -251,3 +251,35 @@ kegg_df <- as.data.frame(kegg_res) %>%
   arrange(`P value`)
 
 write.csv(kegg_df, file = paste0(outdir, "KEGG_enrichment_KD_vs_WT.csv"), row.names = FALSE)
+
+# --- Droplot ---
+plot_data <- kegg_df %>%
+  arrange(`P value`) %>%
+  mutate(
+    `-log10(pvalue)` = -log10(`P value`),
+    `Pathway Name`   = stringr::str_wrap(`Pathway Name`, width = 20)
+  )
+
+dotplot_kegg <- ggplot(plot_data, 
+                       aes(x = `Rich Factor`, 
+                           y = reorder(`Pathway Name`, `Rich Factor`),
+                           color = `P value`,
+                           size  = factor(S))) +
+  geom_point() +
+  scale_color_gradient(low = "#d73027", high = "#4575b4",
+                       name = "P-value") +
+  scale_size_manual(name = "Gene count", values = c("1" = 3, "2" = 6)) +
+  labs(
+    title = "KEGG Pathway Enrichment",
+    x     = "Rich Factor",
+    y     = NULL
+  ) +
+  theme_dose() +
+  theme(
+    axis.text.y  = element_text(size = 9),
+    axis.text.x  = element_text(size = 9),
+    plot.title   = element_text(hjust = 0.5, face = "bold"),
+    legend.position = "right"
+  )
+
+ggsave(paste0(figdir, "KEGG_droplot.png"), plot  = dotplot_kegg)
