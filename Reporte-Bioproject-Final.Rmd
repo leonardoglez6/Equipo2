@@ -131,11 +131,11 @@ datatable(
 
 # Diagrama de flujo de trabajo
 
-![](images/Parte1.png)
+![](figures/Diagrama-Parte1.png)
 
-![](images/Parte2-actualizado.png)
+![](figures/Diagrama-Parte2.png)
 
-![](images/Parte3.png)
+![](figures/Diagrama-Parte3.png)
 
 # Calidad de las secuencias de los datos crudos
 
