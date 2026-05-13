@@ -23,71 +23,75 @@ editor_options:
 
 # Descripción de los datos
 
-+----------------------------+----------------------------+
-| Descripción                | Información                |
-+============================+============================+
-| BioProject                 | PRJNA1198873               |
-+----------------------------+----------------------------+
-| Especie                    | *Homo sapiens*             |
-+----------------------------+----------------------------+
-| Tipo de bibliotecas        | *paired-end*               |
-+----------------------------+----------------------------+
-| Método de selección        | Purificación de            |
-|                            | transcritos poliadenilados |
-|                            | (poli-A)                   |
-+----------------------------+----------------------------+
-| Número de transcriptomas   | 6                          |
-+----------------------------+----------------------------+
-| Número de réplicas         | 3 replicas biológicas por  |
-| biológicas                 | condición (control y       |
-|                            | knockdown)                 |
-+----------------------------+----------------------------+
-| Secuenciador empleado      | Illumina NovaSeq 6000      |
-+----------------------------+----------------------------+
-| Distribución de las        | -   **Control**: 3         |
-| muestras                   |     réplicas biológicas WT |
-|                            |     (SRR31732089,          |
-|                            |     SRR31732090,           |
-|                            |     SRR31732091)           |
-|                            |                            |
-|                            | -   **Sobreexpresión**: 3  |
-|                            |     réplicas biológicas    |
-|                            |     con knockdown de       |
-|                            |     *STEAP3* (SRR31732086, |
-|                            |     SRR31732087,           |
-|                            |     SRR31732088)\n         |
-+----------------------------+----------------------------+
-| Profundidad de             | 19 - 24 M seq              |
-| secuenciación de cada      |                            |
-| transcriptoma              |                            |
-+----------------------------+----------------------------+
-| Tamaño de las lecturas     | 148 bp                     |
-+----------------------------+----------------------------+
-| Artículo científico        | Zhao Z, Yu P, Wang Y, Li H |
-|                            | et al. Silencing of STEAP3 |
-|                            | suppresses cervical cancer |
-|                            | cell proliferation and     |
-|                            | migration via JAK/STAT3    |
-|                            | signaling pathway. Cancer  |
-|                            | Metab 2024 Dec             |
-|                            | 30;12(1):40. PM ID: [3973  |
-|                            | 675                        |
-|                            | 1](htt%20%2                |
-|                            | 0%20%20%20%20%20p%%20%2020 |
-|                            | s:%20%20%20//%20%%2020www% |
-|                            | 20%%20%2020%%2020.%20n%%20 |
-|                            | 2%200c%20bi%20%2%200.n%20% |
-|                            | 20%%2020%20l%20m.n%%%20202 |
-|                            | 0i%%202%200%%%2%2002020h%2 |
-|                            | 0.%2%200g%%2%20%200%2020o% |
-|                            | 20%20%20%20v%20/p%20%20ub% |
-|                            | 2%200m%20ed/%203%20%%20209 |
-|                            | %%20%2%200%2020%%20207%2%2 |
-|                            | 0%%202003%20%2%200%%%20202 |
-|                            | %2%2000%20%206%207%20%%20% |
-|                            | 20%202%200%205%20%%202%200 |
-|                            | 1 "Link to PubMed record") |
-+----------------------------+----------------------------+
++---------------------------+---------------------------+
+| Descripción               | Información               |
++===========================+===========================+
+| BioProject                | PRJNA1198873              |
++---------------------------+---------------------------+
+| Especie                   | *Homo sapiens*            |
++---------------------------+---------------------------+
+| Tipo de bibliotecas       | *paired-end*              |
++---------------------------+---------------------------+
+| Método de selección       | Purificación de           |
+|                           | transcritos               |
+|                           | poliadenilados (poli-A)   |
++---------------------------+---------------------------+
+| Número de transcriptomas  | 6                         |
++---------------------------+---------------------------+
+| Número de réplicas        | 3 replicas biológicas por |
+| biológicas                | condición (control y      |
+|                           | knockdown)                |
++---------------------------+---------------------------+
+| Secuenciador empleado     | Illumina NovaSeq 6000     |
++---------------------------+---------------------------+
+| Distribución de las       | -   **Control**: 3        |
+| muestras                  |     réplicas biológicas   |
+|                           |     WT (SRR31732089,      |
+|                           |     SRR31732090,          |
+|                           |     SRR31732091)          |
+|                           |                           |
+|                           | -   **Sobreexpresión**: 3 |
+|                           |     réplicas biológicas   |
+|                           |     con knockdown de      |
+|                           |     *STEAP3*              |
+|                           |     (SRR31732086,         |
+|                           |     SRR31732087,          |
+|                           |     SRR31732088)\n        |
++---------------------------+---------------------------+
+| Profundidad de            | 19 - 24 M seq             |
+| secuenciación de cada     |                           |
+| transcriptoma             |                           |
++---------------------------+---------------------------+
+| Tamaño de las lecturas    | 148 bp                    |
++---------------------------+---------------------------+
+| Artículo científico       | Zhao Z, Yu P, Wang Y, Li  |
+|                           | H et al. Silencing of     |
+|                           | STEAP3 suppresses         |
+|                           | cervical cancer cell      |
+|                           | proliferation and         |
+|                           | migration via JAK/STAT3   |
+|                           | signaling pathway. Cancer |
+|                           | Metab 2024 Dec            |
+|                           | 30;12(1):40. PM ID: [3973 |
+|                           | 675                       |
+|                           | 1](htt%20%2%200%2         |
+|                           | 0%20%20%20%20p%%20%2020%2 |
+|                           | 0s:%20%20%20//%20%%2020ww |
+|                           | w%%2020%%20%2020%%2020.%2 |
+|                           | 0n%%20%202%200c%20bi%20%2 |
+|                           | %200.n%20%%2020%%2020%20l |
+|                           | %20m.n%%%20202%200i%%202% |
+|                           | 200%%%2%2002020h%2%200.%2 |
+|                           | %200g%%2%20%200%2020o%%20 |
+|                           | 20%20%20%20v%20/p%20%20ub |
+|                           | %%202%200m%20ed/%203%20%% |
+|                           | 20209%20%%20%2%200%2020%% |
+|                           | 20207%2%2%200%%202003%20% |
+|                           | 2%200%%%20202%20%2%2000%2 |
+|                           | 0%206%207%20%%20%%2020%20 |
+|                           | 2%200%205%20%%202%200%201 |
+|                           |  "Link to PubMed record") |
++---------------------------+---------------------------+
 
 : Tabla 1: Detalles del Bioproyecto y características de las muestras
 
@@ -139,50 +143,71 @@ datatable(
 
 # Resultados
 
+## Estructura del trabajo
+
+La **estructura** de las carpetas dentro del cluster se puede observar a
+continuación, la cual contiene carpetas compartidas con la estructura
+dentro de Github:
+
+Los **outlogs** de los scripts se pueden observar
+[aquí](https://github.com/leonardoglez6/Equipo2/tree/main/out_logs).
+
 ## 1. Obtener datos crudos
 
 Buscamos nuestro BioProject dentro de ENA (European Nucleotide Archive),
-para poder seleccionar las muestras.
-
-Utilizamos el comando wget para las 12 muestras (6 muestras con su
-respectiva lectura forward y reverse).
+para poder seleccionar las muestras. Posteriormente, utilizamos el
+comando `wget` para las 12 muestras (6 muestras con su respectiva
+lectura forward y reverse).
 
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
-[`scripts/09_DEG_STAR_KD.R`](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/01_DownloadRawData.sh).
+[scripts/01_DownloadRawData.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/01_DownloadRawData.sh)
 
-# Calidad de las secuencias de los datos crudos
+## 2. Análisis de calidad de las secuencias de los datos crudos
 
-Se realizó el análisis de calidad de las 6 muestras seleccionadas. Se
-obtuvo un contenido de GC aproximado de 50% formando una distribución
+Se realizó el análisis de calidad de las 6 muestras seleccionadas con el
+programa **FastQC**, primero de forma individual y después generando un
+MultiQC.
+
+El script correspondiente se puede encontrar dentro del GitHub, en la
+ruta
+[scripts/02_Quality_raw.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/02_Quality_raw.sh)
+
+Se obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 19M - 24.7M.
 
-![Contenido de GC](figures/fastqc_per_sequence_gc_content_plot.png)
+![Contenido de GC de los datos
+crudos](figures/fastqc_per_sequence_gc_content_plot.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 35. De igual forma, las muestras tienen un promedio de
 calidad con un pico máximo en Phred 36.
 
-![Calidad por base](figures/fastqc_per_base_sequence_quality_plot.png)
+![Calidad por base de los datos
+crudos](figures/fastqc_per_base_sequence_quality_plot.png)
 
-![Calidad por
-secuencia](figures/fastqc_per_sequence_quality_scores_plot.png)
+![Calidad por secuencia de los datos
+crudos](figures/fastqc_per_sequence_quality_scores_plot.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores.
 
-![](figures/fastqc_per_base_n_content_plot.png)
+![Contenido de bases indeterminadas de los datos
+crudos](figures/fastqc_per_base_n_content_plot.png)
+
+![Pruebas secuencias sobrerrepresentadas y contenido de adaptadores de
+los datos crudos](figures/fastqc_adapters.png){width="1037"}
 
 Sin embargo, se identificaron secuencias duplicadas, que posiblemente
 puedan estar relacionadas con la presencia de dímeros de adaptadores.
 
-![Secuencias
-duplicadas](figures/fastqc_sequence_duplication_levels_plot.png)
+![Secuencias duplicadas de los datos
+crudos](figures/fastqc_sequence_duplication_levels_plot.png)
 
-## Conclusión de la calidad de los datos crudos
+### Conclusión de la calidad de los datos crudos
 
 Al terminar de analizar los datos, concluimos que son adecuados para el
 desarrollo del proyecto. Por lo general, las secuencias tienen buena
@@ -194,46 +219,84 @@ Podemos concluir que podemos continuar utilizando esta base de datos
 para análisis futuros, pero debemos realizar la limpieza correspondiente
 para mejorar la calidad de los mismos.
 
-# Calidad de las secuencias de los datos procesados
+## 3. Trimming de datos crudos
 
-Se realizó el análisis de calidad de las 6 muestras seleccionadas. Se
-obtuvo un contenido de GC aproximado de 50% formando una distribución
+Se realizó el trimming de los datos para quitar secuencias de mala
+calidad y remover la posible presencia de adaptadores dentro de los
+datos.
+
+De manera previa, se descargaron las secuencias de los adaptadores a
+eliminar *TruSeq3 Paired End* debido a las características de nuestros
+datos. Posteriormente, se utilizó el programa **Trimmomatic** con los
+siguientes parámetros:
+
+-   `LEADING:3` Elimina bases del inicio del read si su calidad es menor
+    a 3
+
+-   `TRAILING:3` Elimina bases del final del read si su calidad es menor
+    a 3
+
+-   `SLIDINGWINDOW:4:20` Recorre read con ventana de 4 bases y corta si
+    calidad promedio es menor a 20.
+
+-   `MINLEN:80` Descarta reads con menos de 80 bases después del
+    trimming
+
+El script correspondiente se puede encontrar dentro del GitHub, en la
+ruta
+[scripts/03_Trimmed.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/03_Trimmed.sh)
+
+## 4. Análisis de calidad de las secuencias de los datos procesados
+
+Se realizó el análisis de calidad de las 6 muestras tras el trimming con
+el programa **FastQC**, primero de forma individual y después generando
+un MultiQC.
+
+El script correspondiente se puede encontrar dentro del GitHub, en la
+ruta
+[scripts/04_Quality_trimmed.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/04_Quality_trimmed.sh)
+
+Se obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 17.9M - 23.2M.
 
-![Contenido de GC
-(procesado)](figures/fastqc_per_sequence_gc_content_plot-01.png)
+![Contenido de GC de los datos
+procesados](figures/fastqc_per_sequence_gc_content_plot-01.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 36.
 
-![Calidad por base
-(procesado)](figures/fastqc_per_base_sequence_quality_plot-01.png)
+![Calidad por base de los datos
+procesados](figures/fastqc_per_base_sequence_quality_plot-01.png)
 
-![Calidad por secuencia
-(procesado)](figures/fastqc_per_sequence_quality_scores_plot-01.png)
+![Calidad por secuencia de los datos
+procesados](figures/fastqc_per_sequence_quality_scores_plot-01.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores los cuales
 fueron removidos utilizando `trimmomatic` versión 0.33.
 
-![Contenido por base de la secuencia
-(procesado)](figures/fastqc_per_base_n_content_plot-01.png)
+![Contenido de bases indeterminadas de los datos
+procesados](figures/fastqc_per_base_n_content_plot-01.png)
+
+![Pruebas secuencias sobrerrepresentadas y contenido de adaptadores de
+los datos
+procesados](figures/fastqc_adapters_processed.png){width="1116"}
 
 La presencia de secuencias duplicadas se mantuvo como una prueba
 fallida, sin embargo, son resultados esperados al realizar RNA-seq.
 
-![Secuencias duplicadas
-(procesado)](figures/fastqc_sequence_duplication_levels_plot-01.png)
+![Secuencias duplicadas de los datos
+procesados](figures/fastqc_sequence_duplication_levels_plot-01.png)
 
 Se encuentra un sesgo en las primeras 15 bases en la gráfica de Per base
 sequence content, sin embargo, se reporta que es normal para RNA-seq.
 
-## Conclusión de la calidad de datos procesados
+### Conclusión de la calidad de datos procesados
 
-El procesamiento de los datos utilizando `trimmomatic` versión redujo la
+El procesamiento de los datos utilizando `trimmomatic` redujo la
 cobertura de las secuencias, indicativo que removió lecturas de mala
 calidad, y todos los reads pasaron la prueba de contenido de
 adaptadores, por lo cuál indica que fueron removidos.
@@ -241,17 +304,66 @@ adaptadores, por lo cuál indica que fueron removidos.
 El tamaño de las reads iniciales (datos crudos) y las finales (datos
 procesados) se mantuvo igual.
 
-# Alineamiento de Secuencias
+## 5. Generar index de STAR
 
-Previo a realizar el alineamiento, se obtuvo el genoma de referencia y
-se indexó. El script correspondiente al indexado se puede encontrar
-dentro del GitHub, en la ruta `scripts/05_STAR_index.sh`.
+Antes de realizar el alineamiento de las secuencias, es fundamental
+realizar el indexado para acceder a los datos de forma más eficiente.
+Para ello se obtuvo el genoma de referencia humano desde NCBI, versión
+*GRCh38.p14*, en formato FASTA (secuencia) y GTF (anotaciones).
 
-Realizamos el alineamiento con STAR con las secuencias de los datos
-procesados. El script correspondiente al alineamiento se puede encontrar
-dentro del GitHub, en la ruta `scripts/06_STAR_align.sh`.
+Posteriormente, se realizó el indexado con STAR, utilizando los
+siguientes parámetros:
 
-# Predicción de cuentas
+-   `--run ThreadN 30` Usa 30 threads en paralelo para mayor velocidad
+
+-   `--runMode genomeGenerate` Genera el índice del genoma
+
+-   `--genomeDir ./align/STAR/STAR_index` Indica ruta donde se guardarán
+    los índices
+
+-   `--genomeFastaFiles` Recibe el archivo FASTA del genoma de
+    referencia
+
+-   `--sjdbGTFfile` Recibe el archivo GTF del genoma de referencia
+
+-   `--sjdbOverhang 149` Define el tamaño de la secuencia alrededor de
+    los splice junction (punto de unión entre dos exones), el valor
+    óptimo es `longitud read - 1`
+
+El script correspondiente se puede encontrar dentro del GitHub, en la
+ruta
+[scripts/05_STAR_index.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/05_STAR_index.sh)
+
+## 6. Alineamiento de secuencias con STAR
+
+Se realizó el alineamiento de las secuencias con STAR, debido a su alta
+precisión y velocidad de mapeo. Para ello, se utilizaron las secuencias
+de los datos procesados y el índice previamente generado. Además, se
+realizó el conteo de las lecturas por genes. Se utilizaron los
+siguientes parámetros:
+
+-   `--runThreadN 12` Usa 12 threads en paralelo para mayor velocidad
+
+-   `--genomeDir` Recibe la ruta del índice
+
+-   `--readFilesIn` Recibe las secuencias de los datos procesados (ambas
+    lecturas paired-end)
+
+-   `--outSAMtype BAM SortedByCoordinate` Convierte archivo de salida
+    SAM a BAM y ordenados por posición en el cromosoma
+
+-   `--quantMode GeneCounts` Cuenta lecturas por genes
+
+-   `--readFilesCommand zcat` Descomprime datos mientras los analiza
+
+-   `--outFileNamePrefix` Define ruta donde se guardan resultados por
+    muestra
+
+El script correspondiente se puede encontrar dentro del GitHub, en la
+ruta
+[scripts/06_STAR_align.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/06_STAR_align.sh)
+
+## 7. Importar datos de cuentas en R
 
 Posterior al alineamiento con STAR, es necesario importar los datos
 provenientes de este a R para el posterior análisis de Expresion
