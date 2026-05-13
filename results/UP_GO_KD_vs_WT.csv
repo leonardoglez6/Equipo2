@@ -1,0 +1,41 @@
+"","term","condition","count","p.adjust","category","go_id","geneNames","p.val","num"
+"72","negative regulation of peptidase activity","Upregulated",28,0.00118951220004432,"GO:BP","GO:0010466","SERPINB3,SERPINB4",2.92,1
+"73","biological process involved in interspecies interaction between organisms","Upregulated",1777,0.00119475696283112,"GO:BP","GO:0044419","SERPINB3,SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.92,2
+"74","negative regulation of hydrolase activity","Upregulated",66,0.00119475696283112,"GO:BP","GO:0051346","SERPINB3,SERPINB4",2.92,3
+"75","negative regulation of proteolysis","Upregulated",68,0.00119475696283112,"GO:BP","GO:0045861","SERPINB3,SERPINB4",2.92,4
+"76","regulation of peptidase activity","Upregulated",44,0.00119475696283112,"GO:BP","GO:0052547","SERPINB3,SERPINB4",2.92,5
+"77","response to virus","Upregulated",416,0.00119475696283112,"GO:BP","GO:0009615","RSAD2,CXCL10,CCL22,GBP5",2.92,6
+"78","regulation of response to external stimulus","Upregulated",1092,0.00162620526501655,"GO:BP","GO:0032101","SERPINB4,RSAD2,CXCL10,FGG,GBP5",2.79,7
+"79","defense response to symbiont","Upregulated",1100,0.00162620526501655,"GO:BP","GO:0140546","SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.79,8
+"80","defense response to other organism","Upregulated",1121,0.00162620526501655,"GO:BP","GO:0098542","SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.79,9
+"81","regulation of multicellular organismal process","Upregulated",2923,0.00195189574878428,"GO:BP","GO:0051239","SERPINB3,RSAD2,CXCL10,XAF1,FGG,GBP5,FGL1",2.71,10
+"82","response to external stimulus","Upregulated",2427,0.00341707772379454,"GO:BP","GO:0009605","SERPINB4,RSAD2,CXCL10,FGG,CCL22,GBP5",2.47,11
+"83","regulation of proteolysis","Upregulated",166,0.00359135131825552,"GO:BP","GO:0030162","SERPINB3,SERPINB4",2.44,12
+"84","immune response","Upregulated",2118,0.00359731067885272,"GO:BP","GO:0006955","SERPINB4,RSAD2,CXCL10,CCL22,GBP5,FGL1",2.44,13
+"85","response to other organism","Upregulated",1610,0.00531841761273406,"GO:BP","GO:0051707","SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.27,14
+"86","negative regulation of catalytic activity","Upregulated",233,0.00531841761273406,"GO:BP","GO:0043086","SERPINB3,SERPINB4",2.27,15
+"87","response to external biotic stimulus","Upregulated",1613,0.00531841761273406,"GO:BP","GO:0043207","SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.27,16
+"88","response to biotic stimulus","Upregulated",1652,0.00561365136288045,"GO:BP","GO:0009607","SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.25,17
+"89","regulation of hydrolase activity","Upregulated",277,0.00668287674292979,"GO:BP","GO:0051336","SERPINB3,SERPINB4",2.18,18
+"90","regulation of response to stimulus","Upregulated",3993,0.00679337155422699,"GO:BP","GO:0048583","SERPINB3,SERPINB4,RSAD2,CXCL10,FGG,GBP5,FGL1",2.17,19
+"91","response to peptide","Upregulated",993,0.00679337155422699,"GO:BP","GO:1901652","CXCL10,XAF1,CCL22,GBP5",2.17,20
+"92","defense response","Upregulated",1883,0.00679337155422699,"GO:BP","GO:0006952","SERPINB4,RSAD2,CXCL10,CCL22,GBP5",2.17,21
+"93","defense response to virus","Upregulated",322,0.00679337155422699,"GO:BP","GO:0051607","RSAD2,CXCL10,GBP5",2.17,22
+"94","response to cytokine","Upregulated",979,0.00679337155422699,"GO:BP","GO:0034097","CXCL10,XAF1,CCL22,GBP5",2.17,23
+"95","regulation of immune system process","Upregulated",1594,0.00679337155422699,"GO:BP","GO:0002682","SERPINB4,RSAD2,CXCL10,GBP5,FGL1",2.17,24
+"96","regulation of lymphocyte mediated immunity","Upregulated",193,0.00679337155422699,"GO:BP","GO:0002706","SERPINB4,RSAD2",2.17,25
+"97","autocrine signaling","Upregulated",7,0.00679337155422699,"GO:BP","GO:0035425","SERPINB3",2.17,26
+"98","paracrine signaling","Upregulated",7,0.00679337155422699,"GO:BP","GO:0038001","SERPINB3",2.17,27
+"99","negative regulation of molecular function","Upregulated",355,0.00679337155422699,"GO:BP","GO:0044092","SERPINB3,SERPINB4",2.17,28
+"100","response to stress","Upregulated",3984,0.00679337155422699,"GO:BP","GO:0006950","SERPINB4,RSAD2,CXCL10,FGG,CCL22,GBP5,FGL1",2.17,29
+"488","Skin 1; cells in corneal layer[High]","Upregulated",33,0.00114930249151247,"HPA","HPA:0461403","SERPINB3,SERPINB4",2.94,30
+"489","Skin 2; cells in corneal layer[High]","Upregulated",36,0.00114930249151247,"HPA","HPA:0471403","SERPINB3,SERPINB4",2.94,31
+"490","Skin 1; cells in corneal layer[≥Medium]","Upregulated",64,0.0024518453152266,"HPA","HPA:0461402","SERPINB3,SERPINB4",2.61,32
+"491","Skin 2; cells in corneal layer[≥Medium]","Upregulated",90,0.00312172448170816,"HPA","HPA:0471402","SERPINB3,SERPINB4",2.51,33
+"492","Skin 1; cells in corneal layer[≥Low]","Upregulated",93,0.00312172448170816,"HPA","HPA:0461401","SERPINB3,SERPINB4",2.51,34
+"493","Skin 2; cells in corneal layer[≥Low]","Upregulated",138,0.00574833674723142,"HPA","HPA:0471401","SERPINB3,SERPINB4",2.24,35
+"501","Amoebiasis","Upregulated",102,0.0032549788743909,"KEGG","KEGG:05146","SERPINB3,SERPINB4",2.49,36
+"507","Cytokine Signaling in Immune system","Upregulated",780,0.00282639839182892,"REAC","REAC:R-HSA-1280215","RSAD2,CXCL10,XAF1,CCL22,GBP5",2.55,37
+"508","Immune System","Upregulated",2086,0.00282639839182892,"REAC","REAC:R-HSA-168256","SERPINB3,RSAD2,CXCL10,XAF1,FGG,CCL22,GBP5",2.55,38
+"576","Pancreatic cancer subtypes","Upregulated",49,0.00109901958875117,"WP","WP:WP5390","SERPINB3,SERPINB4",2.96,39
+"577","Fibrin complement receptor 3 signaling","Upregulated",44,0.00654752740438555,"WP","WP:WP4136","CXCL10,FGG",2.18,40

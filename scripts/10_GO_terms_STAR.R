@@ -19,6 +19,7 @@ library(clusterProfiler) #versión 4.14.6
 library(ggplot2) #versión 4.0.1
 library(tidyverse) #versión 2.0.0
 library(dplyr) #versión 1.1.4
+library(org.Hs.eg.db) #versión 3.20.0
 
 # --- Load data -----
 # Cargar archivos
@@ -127,7 +128,7 @@ bar_data_down_ordered$p.val <- round(-log10(bar_data_down_ordered$p.adjust), 2)
 bar_data_down_ordered$num <- seq(1:nrow(bar_data_down_ordered)) # num category for plot
 
 # Guardar dataset
-save(bar_data_down_ordered, file = paste0(outdir, "DOWN_GO_", plot_name, ".RData"))
+write.csv(bar_data_down_ordered, file = paste0(outdir, "DOWN_GO_", plot_name, ".csv"))
 
 # agregar colores para la grafica
 bar_data_down_ordered_mod <- left_join(bar_data_down_ordered, Category_colors, by= "category")
@@ -172,7 +173,7 @@ bar_data_up_ordered$p.val <- round(-log10(bar_data_up_ordered$p.adjust), 2)
 bar_data_up_ordered$num <- seq(1:nrow(bar_data_up_ordered)) # num category for plot
 
 # Guardar dataset
-write.csv(bar_data_up_ordered, file = paste0(outdir, "UP_GO_", plot_name, ".RData"))
+write.csv(bar_data_up_ordered, file = paste0(outdir, "UP_GO_", plot_name, ".csv"))
 
 # agregar colores para la grafica
 bar_data_up_ordered_mod <- left_join(bar_data_up_ordered, Category_colors, by= "category")

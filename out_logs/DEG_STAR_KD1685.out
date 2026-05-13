@@ -1,0 +1,42 @@
+[1] 17266     6
+[1] "Intercept"                   "type_STEAP3.knockdown_vs_WT"
+log2 fold change (MLE): type STEAP3.knockdown vs WT 
+Wald test p-value: type STEAP3.knockdown vs WT 
+DataFrame with 17266 rows and 6 columns
+              baseMean log2FoldChange     lfcSE      stat      pvalue
+             <numeric>      <numeric> <numeric> <numeric>   <numeric>
+WASH7P       372.36014       0.148578  0.144953  1.025007    0.305360
+LOC124900384   4.40926       0.669172  0.880406  0.760072    0.447212
+LOC729737      3.80755       0.916806  0.965850  0.949222    0.342508
+WASH9P        72.60749       0.104100  0.253271  0.411023    0.681055
+LOC100288069 111.98226       0.449493  0.206423  2.177531    0.029441
+...                ...            ...       ...       ...         ...
+ND4          228579.20      -0.411851  0.119183  -3.45562 5.49026e-04
+ND5           70350.79      -0.430462  0.131905  -3.26341 1.10079e-03
+ND6           10750.68      -0.406011  0.124400  -3.26376 1.09943e-03
+CYTB          77172.59      -0.541110  0.133623  -4.04954 5.13189e-05
+TRNP           2265.45      -0.536817  0.118909  -4.51453 6.34582e-06
+                    padj
+               <numeric>
+WASH7P          0.637815
+LOC124900384          NA
+LOC729737             NA
+WASH9P          0.876067
+LOC100288069    0.174181
+...                  ...
+ND4          0.010141260
+ND5          0.017200994
+ND6          0.017200994
+CYTB         0.001529716
+TRNP         0.000269676
+
+out of 17266 with nonzero total read count
+adjusted p-value < 0.1
+LFC > 0 (up)       : 744, 4.3%
+LFC < 0 (down)     : 825, 4.8%
+outliers [1]       : 0, 0%
+low counts [2]     : 4687, 27%
+(mean count < 15)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+

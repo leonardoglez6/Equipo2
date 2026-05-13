@@ -1,0 +1,41 @@
+"","term","condition","count","p.adjust","category","go_id","geneNames","p.val","num"
+"1","hormonal regulation of the force of heart contraction","Downregulated",1,0.0109670036238668,"GO:BP","GO:0003058","EDN2",1.96,1
+"2","cell tip growth","Downregulated",1,0.0109670036238668,"GO:BP","GO:0009932","EDN2",1.96,2
+"3","unidimensional cell growth","Downregulated",3,0.0146216255775903,"GO:BP","GO:0009826","EDN2",1.84,3
+"4","vein smooth muscle contraction","Downregulated",4,0.0146216255775903,"GO:BP","GO:0014826","EDN2",1.84,4
+"5","copper ion import","Downregulated",7,0.0146216255775903,"GO:BP","GO:0015677","STEAP3",1.84,5
+"6","positive regulation of the force of heart contraction by chemical signal","Downregulated",3,0.0146216255775903,"GO:BP","GO:0003099","EDN2",1.84,6
+"7","regulation of systemic arterial blood pressure by endothelin","Downregulated",6,0.0164485443341246,"GO:BP","GO:0003100","EDN2",1.78,7
+"8","regulation of the force of heart contraction by chemical signal","Downregulated",6,0.0164485443341246,"GO:BP","GO:0003057","EDN2",1.78,8
+"9","copper ion transport","Downregulated",16,0.0194968953313415,"GO:BP","GO:0006825","STEAP3",1.71,9
+"10","artery smooth muscle contraction","Downregulated",9,0.0197368412077272,"GO:BP","GO:0014824","EDN2",1.7,10
+"11","tonic smooth muscle contraction","Downregulated",10,0.0199357278215402,"GO:BP","GO:0014820","EDN2",1.7,11
+"12","prostaglandin biosynthetic process","Downregulated",28,0.0340976024908881,"GO:BP","GO:0001516","EDN2",1.47,12
+"13","iron ion transport","Downregulated",54,0.0340976024908881,"GO:BP","GO:0006826","STEAP3",1.47,13
+"14","regulation of the force of heart contraction","Downregulated",25,0.0340976024908881,"GO:BP","GO:0002026","EDN2",1.47,14
+"15","vascular associated smooth muscle contraction","Downregulated",25,0.0340976024908881,"GO:BP","GO:0014829","EDN2",1.47,15
+"39","Dysplastic erythropoesis","Downregulated",1,0.0180769230769251,"HP","HP:0012134","STEAP3",1.74,16
+"40","Elevated transferrin saturation","Downregulated",11,0.0271153846153845,"HP","HP:0012463","STEAP3",1.57,17
+"41","Increased circulating iron concentration","Downregulated",14,0.0271153846153845,"HP","HP:0003452","STEAP3",1.57,18
+"42","Anisopoikilocytosis","Downregulated",11,0.0271153846153845,"HP","HP:0004823","STEAP3",1.57,19
+"43","Decreased transferrin saturation","Downregulated",5,0.0271153846153845,"HP","HP:0012464","STEAP3",1.57,20
+"44","Elevated hepatic iron concentration","Downregulated",12,0.0271153846153845,"HP","HP:0012465","STEAP3",1.57,21
+"45","Abnormal transferrin saturation","Downregulated",15,0.0271153846153845,"HP","HP:0040135","STEAP3",1.57,22
+"46","Hypochromia","Downregulated",14,0.0271153846153845,"HP","HP:0032231","STEAP3",1.57,23
+"47","Decreased mean corpuscular volume","Downregulated",14,0.0271153846153845,"HP","HP:0025066","STEAP3",1.57,24
+"48","Abnormal hepatic iron concentration","Downregulated",12,0.0271153846153845,"HP","HP:0040134","STEAP3",1.57,25
+"53","Ferroptosis","Downregulated",41,0.0301170261587883,"KEGG","KEGG:04216","STEAP3",1.52,26
+"54","p53 signaling pathway","Downregulated",75,0.0301170261587883,"KEGG","KEGG:04115","STEAP3",1.52,27
+"56","Transferrin endocytosis and recycling","Downregulated",31,0.0166764652677277,"REAC","REAC:R-HSA-917977","STEAP3",1.78,28
+"57","RHOJ GTPase cycle","Downregulated",55,0.0166764652677277,"REAC","REAC:R-HSA-9013409","STEAP3",1.78,29
+"58","RHOQ GTPase cycle","Downregulated",59,0.0166764652677277,"REAC","REAC:R-HSA-9013406","STEAP3",1.78,30
+"59","TP53 Regulates Transcription of Cell Death Genes","Downregulated",44,0.0166764652677277,"REAC","REAC:R-HSA-5633008","STEAP3",1.78,31
+"60","TP53 Regulates Transcription of Genes Involved in Cytochrome C Release","Downregulated",20,0.0166764652677277,"REAC","REAC:R-HSA-6803204","STEAP3",1.78,32
+"61","RHOF GTPase cycle","Downregulated",42,0.0166764652677277,"REAC","REAC:R-HSA-9035034","STEAP3",1.78,33
+"62","RHOD GTPase cycle","Downregulated",52,0.0166764652677277,"REAC","REAC:R-HSA-9013405","STEAP3",1.78,34
+"63","Iron uptake and transport","Downregulated",57,0.0166764652677277,"REAC","REAC:R-HSA-917937","STEAP3",1.78,35
+"65","Iron metabolism in placenta","Downregulated",11,0.00764130801213625,"WP","WP:WP2007","STEAP3",2.12,36
+"66","Iron metabolism disorders","Downregulated",17,0.00764130801213625,"WP","WP:WP5172","STEAP3",2.12,37
+"67","Copper homeostasis","Downregulated",51,0.0143836386110798,"WP","WP:WP3286","STEAP3",1.84,38
+"68","Ferroptosis","Downregulated",64,0.0143836386110798,"WP","WP:WP4313","STEAP3",1.84,39
+"69","Glucocorticoid receptor pathway","Downregulated",70,0.0250737712352535,"WP","WP:WP2880","EDN2",1.6,40
