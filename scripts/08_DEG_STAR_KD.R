@@ -82,6 +82,22 @@ ggsave(filename = paste0(figdir, "PCA_rlog.png"), plot = plt)
 # cada componente principal representa una combinacion lineal de las variables (en este caso genes) 
 # que explican la mayor cantidad de varianza en nuestros datos (las cuentas).
 
+## --- Corrección de batch effect limma de SVA ---
+
+mat_norm <- assay(ddslog) #ComBat utiliza las cuentas normalizadas, no las crudas
+mm <- model.matrix(~type, colData(ddslog)) #model de KD3 vs WT
+limma::removeBatchEffect(mat_norm, batch = ddslog$batch, design = mm)
+
+# No se generó columna de $batch, por lo que no hay batch effect detectado
+
+assay(ddslog) <- mat_norm
+
+pca_batch <- plotPCA(ddslog, intgroup = "type")
+
+pca_batch
+
+ggsave(filename = paste0(figdir, "PCA_no_batch_rlog.png"), plot = pca_batch)
+
 ## ---- Obtener informacion del único contraste ----
 # results(dds, contrast=c("condition","treated","untreated"))
 res_KD <- results(dds, name = "type_STEAP3.knockdown_vs_WT")

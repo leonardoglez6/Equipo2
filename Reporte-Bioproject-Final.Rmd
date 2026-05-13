@@ -378,6 +378,20 @@ los datos y cargamos los metadatos. Ambos se encuentran en la ruta de
 github `results/counts/raw_counts.RData` como un dataset de R para
 cargar.
 
+## 8. Análisis de expresión diferencial de genes (DEGs)
+
+...
+Al realizar la detección del batch effect, las 3 muestras con la condición 
+Knockdown STEAP3 se agrupan, mientras que las 2 de las WT se agrupan y la 
+muestra restante se aleja de los dos clusters. Al realizar la corrección por el 
+batch effect se obtiene la misma gráfica y no se genera la columna `$batch` en 
+el objeto generado por DESeq2, por lo que se concluye que no existe batch effect 
+y probablemente existe una dispersión de los datos para las muestras WT que no 
+puede visualizarse debido a la poca cantidad de muestras (3).
+
+[IMAGEN DEL PCA_NO_BATCH]
+...
+
 # Expresión diferencial
 
 Buscamos hacer nuestro análisis de expresión diferencial a partir de la
