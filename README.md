@@ -1,12 +1,12 @@
 # RNAseq report: Silencing of STEAP3 suppresses cervical cancer cell proliferation and migration via JAK/STAT3 signaling pathway
 
-**Fecha de creación: ** 14/04/2026
+**Fecha de creación:** 14/04/2026
 
-**Materia: ** Bioinformática y estadística 2
+**Materia:** Bioinformática y estadística 2
 
-**Semestre: ** 4to semestre
+**Semestre:** 4to semestre
 
-## Integrantes del equipo
+## Integrantes del equipo 👥
 
 -   **Equipo:** 2
 
@@ -19,13 +19,13 @@
     -   Yuliana Denisse Sosa Gómez (ysosa) -
         [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com){.email}
 
-## Resumen
+## Resumen ⚡️
 
 El artículo “Silencing of STEAP3 suppresses cervical cancer cell proliferation and migration via JAK/STAT3 signaling pathway” propone investigar los mecanismos de STEAP3 en la proliferación y migración celular en cáncer cervical. SYEAP3 pertenece a la familia de las proteínas STEAP los cuáles se ha reportado que participan en la proliferación y metástasis del cáncer. Con RNA-seq se comparó la expresión de las vías de señalización en las cuáles participa STEAP3 en presencia de STEAP3 (NC) y con knockdown del gen (KD) en células de la línea celular HeLA.
 
-**Reporte renderizado: **Se encuentra dentro del Github en el archivo [Reporte-Bioproject-Final.Rmd](enlace.html)
+**Reporte renderizado**: Se encuentra dentro del Github en el archivo [Reporte-Bioproject-Final.Rmd](enlace.html)
 
-## Estructura
+## Estructura 🗂️
 
 La estructura del proyecto dentro del repositorio de GitHub es la siguiente:
 
@@ -108,26 +108,26 @@ Contiene todas las figuras que se encuentran en el directorio `/figures` fuera d
 
 - **02_Quality_raw.sh**: Obtiene los reportes FASTQC de cada muestra y realiza un reporte multiqc de todas las muestras.
 
-─ **03_Trimmed.sh**: Realiza el procesado de las muestras para eliminar adaptadores y secuencias de mala calidad.
+- **03_Trimmed.sh**: Realiza el procesado de las muestras para eliminar adaptadores y secuencias de mala calidad.
 
-─ **04_Quality_trimmed.sh**: Obtiene los reportes FASTQC de cada muestra procesada y realiza un reporte multiqc de todas las muestras procesadas.
+- **04_Quality_trimmed.sh**: Obtiene los reportes FASTQC de cada muestra procesada y realiza un reporte multiqc de todas las muestras procesadas.
 
-─ **05_STAR_index.sh**: Realiza el indexado del genoma de referencia y el archivo de anotaciones para realizar el posterior alineamiento con STAR.
+- **05_STAR_index.sh**: Realiza el indexado del genoma de referencia y el archivo de anotaciones para realizar el posterior alineamiento con STAR.
 
-─ **06_STAR_align.sh**: Realiza el alineamiento y genera la matriz de cuentas crudas de cada mues†ra utilizando STAR.
+- **06_STAR_align.sh**: Realiza el alineamiento y genera la matriz de cuentas crudas de cada mues†ra utilizando STAR.
 
-─ **07_Load_data_STAR.R**: Carga las matrices de cuentas crudas de cada muestra y genera una matriz de cuentas crudas conjunta.
+- **07_Load_data_STAR.R**: Carga las matrices de cuentas crudas de cada muestra y genera una matriz de cuentas crudas conjunta.
 
-─ **08_DEG_STAR_KD.R**: Realiza la corrección por batch effect de los datos y el análisis de expresión diferencial.
+- **08_DEG_STAR_KD.R**: Realiza la corrección por batch effect de los datos y el análisis de expresión diferencial.
 
-─ **09_Visualization_data_STAR.R**: Genera un volcano plot de los genes expresados diferencialmente con un p-valor significativo y un log2FoldChange ≥ 2 para genes up-regulated y ≤ 2 para genes down-regulated.
+- **09_Visualization_data_STAR.R**: Genera un volcano plot de los genes expresados diferencialmente con un p-valor significativo y un log2FoldChange ≥ 2 para genes up-regulated y ≤ 2 para genes down-regulated.
 
-─ **10_GO_terms_STAR.R**: Realiza enrequecimiento de diferentes términos de distintas bases de datos (GO, KEGG).
+- **10_GO_terms_STAR.R**: Realiza enrequecimiento de diferentes términos de distintas bases de datos (GO, KEGG).
 
-## Metadatos
+## Metadatos 🪪
 
-| Muestras   | Condición        | SampleID     | Réplica biológica |
-|------------|------------------|--------------|-------------------|
+| **Muestras**   | **Condición**        | **SampleID**     | **Réplica biológica** |
+|----------------|----------------------|------------------|-----------------------|
 | GSM8682795 | STEAP3 knockdown | SAMN45855841 | KD_3              |
 | GSM8682794 | STEAP3 knockdown | SAMN45855842 | KD_2              |
 | GSM8682793 | STEAP3 knockdown | SAMN45855843 | KD_1              |
@@ -135,7 +135,30 @@ Contiene todas las figuras que se encuentran en el directorio `/figures` fuera d
 | GSM8682791 | WT               | SAMN45855845 | NC_2              |
 | GSM8682790 | WT               | SAMN45855846 | NC_1              |
 
-## Pipeline
+## Cluster modules 🛠️
+
+```
+module load anaconda3/2025.06
+⎣ source activate multiqc-1.5
+module load fastqc/0.11.3
+module load star/2.7.9a 
+module load trimmomatic/0.33
+```
+
+## R packages 🛠️
+
+```
+library(clusterProfiler) #versión 4.14.6
+library(DESeq2) #versión 1.46.0
+library(DOSE) #versión 4.0.1
+library(dplyr) #versión 1.1.4
+library(enrichplot) #versión 1.26.6
+library(ggplot2) #versión 4.0.1
+library(gprofiler2) #versión 0.2.4
+library(org.Hs.eg.db) #versión 3.20.0
+library(pheatmap) #versión 1.0.13
+library(tidyverse) #versión 2.0.0
+```
 
 
 
