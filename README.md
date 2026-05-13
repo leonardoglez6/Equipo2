@@ -13,11 +13,11 @@
 -   **Integrantes:**
 
     -   Leonardo González López (lgonzalez) -
-        [minestev17\@gmail.com](mailto:minestev17@gmail.com){.email},
+        [minestev17\@gmail.com](mailto:minestev17@gmail.com),
     -   Efrén Nosedal González (enosedal) -
         [enosedal\@gmail.com](enosedal@gmail.com),
     -   Yuliana Denisse Sosa Gómez (ysosa) -
-        [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com){.email}
+        [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com)
 
 ## Resumen ⚡️
 
@@ -118,11 +118,19 @@ Contiene todas las figuras que se encuentran en el directorio `/figures` fuera d
 
 - **07_Load_data_STAR.R**: Carga las matrices de cuentas crudas de cada muestra y genera una matriz de cuentas crudas conjunta.
 
+- **S07_Load_data_STAR.R**: Job de slurm para correr el archvo 07_Load_data_STAR.R.
+
 - **08_DEG_STAR_KD.R**: Realiza la corrección por batch effect de los datos y el análisis de expresión diferencial.
+
+- **S08_DEG_STAR_KD.R**: Job de slurm para correr el archvo 08_DEG_STAR_KD.R.
 
 - **09_Visualization_data_STAR.R**: Genera un volcano plot de los genes expresados diferencialmente con un p-valor significativo y un log2FoldChange ≥ 2 para genes up-regulated y ≤ 2 para genes down-regulated.
 
+- **S09_Visualization_data_STAR.R**: Job de slurm para correr el archvo 09_Visualization_data_STAR.R.
+
 - **10_GO_terms_STAR.R**: Realiza enrequecimiento de diferentes términos de distintas bases de datos (GO, KEGG).
+
+- **S10_GO_terms_STAR.R**: Job de slurm para correr el archvo 10_GO_terms_STAR.R.
 
 ## Metadatos 🪪
 
@@ -160,5 +168,14 @@ library(pheatmap) #versión 1.0.13
 library(tidyverse) #versión 2.0.0
 ```
 
+## Referencias
 
-
+-   Zhao, Z., Yu, P., Wang, Y., Li, H., Qiao, H., Sun, C., Zhu, L., &
+    Yang, P. (2024). Silencing of STEAP3 suppresses cervical cancer cell
+    proliferation and migration via JAK/STAT3 signaling pathway. *Cancer
+    & metabolism*, *12*(1), 40.
+    <https://doi.org/10.1186/s40170-024-00370-2>
+    
+-   Ferroptosis, un mecanismo de muerte celular presente en β-talasemia
+    menor. (2024). *Revista Bioquímica Y Patología Clínica*, *89*(1),
+    19-26. <https://doi.org/10.62073/k7g1yk82>

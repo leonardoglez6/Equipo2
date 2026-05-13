@@ -15,8 +15,9 @@
 module load fastqc/0.11.3
 
 # 2. Correr el analisis
-fastqc /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/raw/SRR31732088_1.fastq.gz -o /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/quality1
-fastqc /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/raw/SRR31732090_2.fastq.gz -o /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/quality1
+for file in /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/raw/*.fastq.gz; do 
+  fastqc $file -o /mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/quality1; 
+  done
 
 # ---- Analisis de multiqc ---
 # 1. Cargar el módulo de Anaconda
