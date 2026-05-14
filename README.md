@@ -14,8 +14,6 @@
 
     -   Leonardo González López (lgonzalez) -
         [minestev17\@gmail.com](mailto:minestev17@gmail.com),
-    -   Efrén Nosedal González (enosedal) -
-        [enosedal\@gmail.com](enosedal@gmail.com),
     -   Yuliana Denisse Sosa Gómez (ysosa) -
         [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com)
 
@@ -118,19 +116,19 @@ Contiene todas las figuras que se encuentran en el directorio `/figures` fuera d
 
 - **07_Load_data_STAR.R**: Carga las matrices de cuentas crudas de cada muestra y genera una matriz de cuentas crudas conjunta.
 
-- **S07_Load_data_STAR.R**: Job de slurm para correr el archvo 07_Load_data_STAR.R.
+- **S07_Load_data_STAR.sh**: Job de slurm para correr el archvo 07_Load_data_STAR.R.
 
 - **08_DEG_STAR_KD.R**: Realiza la corrección por batch effect de los datos y el análisis de expresión diferencial.
 
-- **S08_DEG_STAR_KD.R**: Job de slurm para correr el archvo 08_DEG_STAR_KD.R.
+- **S08_DEG_STAR_KD.sh**: Job de slurm para correr el archvo 08_DEG_STAR_KD.R.
 
 - **09_Visualization_data_STAR.R**: Genera un volcano plot de los genes expresados diferencialmente con un p-valor significativo y un log2FoldChange ≥ 2 para genes up-regulated y ≤ 2 para genes down-regulated.
 
-- **S09_Visualization_data_STAR.R**: Job de slurm para correr el archvo 09_Visualization_data_STAR.R.
+- **S09_Visualization_data_STAR.sh**: Job de slurm para correr el archvo 09_Visualization_data_STAR.R.
 
 - **10_GO_terms_STAR.R**: Realiza enrequecimiento de diferentes términos de distintas bases de datos (GO, KEGG).
 
-- **S10_GO_terms_STAR.R**: Job de slurm para correr el archvo 10_GO_terms_STAR.R.
+- **S10_GO_terms_STAR.sh**: Job de slurm para correr el archvo 10_GO_terms_STAR.R.
 
 ## Metadatos 🪪
 
@@ -142,6 +140,30 @@ Contiene todas las figuras que se encuentran en el directorio `/figures` fuera d
 | GSM8682792 | WT               | SAMN45855844 | NC_3              |
 | GSM8682791 | WT               | SAMN45855845 | NC_2              |
 | GSM8682790 | WT               | SAMN45855846 | NC_1              |
+
+## Pipeline ⏬
+
+1. Se realizó la descarga de los archivos de secuencia cruda FASTQ de las 6 muestras en el cluster ken desde la página de SRA del BioProject que corresponde al artículo, obteniendo 12 archivos debido a que se secuenció utilizando paired ends, correspondiendo dos archivos por cada muestra. Se utilizó el script `01_DownloadRawData.sh`.
+
+2. Se realizaron los reportes de calidad fastqc de todos los archivos de secuencia crudas y con ellos se realizó un reporte de calidad en conjunto multiqc. Los reportes son archivos html. Se utilizó el script `02_Quality_raw.sh`.
+
+3. Se realizó el procesamiento de las secuencias crudas quitando secuencias de adaptadores y de mala calidad. Se generaron 24 archivos FASTQ de secuencias procesadas, 2 archivos procesados (trimmed y unpaired) por cada archivo de secuencia cruda. Se utilizó el script `03_Trimmed.sh`.
+
+4. Se reaizaron los reportes de calidad fastqc y multiqc de los archivos de secuencia procesados. Se utilizó el script `*04_Quality_trimmed.sh`.
+
+5. Se realizaron enlaces simbólicos al genoma de referencia humano versión GRCh38.p14 y a su archivo de anotación. 
+
+6. Se realizó el indexado del genoma y su archivo de anotaciones utilizando STAR para su posterior alineamiento utilizando la misma metodología. Se generaron todos los archivos correspondientes al indexado. Se utilizó el script `05_STAR_index.sh`.
+
+7. Se realizó el alineamiento de las secuencias procesadas para generar 6 transcriptomas (1 por muestra) utilizando STAR. Generó los archivos correspondientes por muestra, dentro los cuales estaban archivos con terminación .ReadPerGene.out.tab los cuales contenían las cuentas para cada gen. Se utilizó el script `06_STAR_align.sh`.
+
+8. Se realizó la importación de las matrices de cuentas generada en el paso anterior a R. Se generó una matriz de cuentas conjunta de todas las muestras y se cargó el archivo de metadata; ambos objetos se guardaron en un .Rdata. Se utilizó el script `S07_Load_data_STAR.sh` para correr el Rscript `07_Load_data_STAR.R`.
+
+9. Se utilizó la matriz de cuentas generada en el paso anterior para realizar la visualización del batch effect de los datos y su corrección; también se generó el objeto que contiene a la matriz de expresión diferencial de los genes. Se utulizó el scriot `S08_DEG_STAR_KD.sh` para correr el Rscript `.08_DEG_STAR_KD.R`.
+
+10. Se utiizó la matriz de expresión diferencial para realizar un volcanoplot de los genes con un log2FoldChange ≥ 2 y ≤ 2; además se realizó un heatmap con los 20 genes expresados diferencialmente con un p-value más significativo. Se utulizó el scriot `S09_Visualization_data_STAR.sh` para correr el Rscript `09_Visualization_data_STAR.R`.
+
+11. Se utilizó la matriz de expresi´pn diferencial para realizar un Manhattan plot con los términos GO más enriquecidos, barplots de genes sobreexpresados y subregulados y un dotplot de las vías de KEGG más enriquecidas. Se utulizó el scriot `S10_GO_terms_STAR.sh` para correr el Rscript `10_GO_terms_STAR.R`.
 
 ## Cluster modules 🛠️
 
@@ -162,33 +184,13 @@ library(DOSE) #versión 4.0.1
 library(dplyr) #versión 1.1.4
 library(enrichplot) #versión 1.26.6
 library(ggplot2) #versión 4.0.1
+library(ggforce) #versión 0.5.0
+library(ggrepel) #versión 0.9.6
 library(gprofiler2) #versión 0.2.4
 library(org.Hs.eg.db) #versión 3.20.0
 library(pheatmap) #versión 1.0.13
 library(tidyverse) #versión 2.0.0
 ```
-
-## Pipeline ⏬
-
-1. 
-
-2. 
-
-3. 
-
-4. 
-
-5. 
-
-6. 
-
-7. 
-
-8. 
-
-9. 
-
-10. 
 
 ## Referencias
 

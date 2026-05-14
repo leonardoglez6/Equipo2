@@ -548,7 +548,7 @@ metadata y el archivo dds.
 Posteriormente, se realizó la normalización de los datos para que poder
 comparar los niveles de expresión entre muestras, evitando sesgos
 técnicos y biológicos. Utilizamos la función rlog debido a que tenemos
-pocas muestras (\<30).
+pocas muestras (<30).
 
 Con el objeto resultante, se realizó un PCA con el objetivo de detectar
 batch effect. De esta forma, se observó que las 3 muestras con la
