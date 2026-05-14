@@ -168,6 +168,28 @@ library(pheatmap) #versión 1.0.13
 library(tidyverse) #versión 2.0.0
 ```
 
+## Pipeline ⏬
+
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+8. 
+
+9. 
+
+10. 
+
 ## Referencias
 
 -   Zhao, Z., Yu, P., Wang, Y., Li, H., Qiao, H., Sun, C., Zhu, L., &
