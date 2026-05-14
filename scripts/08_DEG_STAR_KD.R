@@ -65,17 +65,45 @@ save(metadata, dds, file = paste0(outdir, 'STEAP3_KD_vs_WT.RData'))
 # Regularized logarithm or rlog
 # Normalizacion de las cuentas por logaritmo y podrias hacer el analisis usando este objeto en lugar del dds
 ddslog <- rlog(dds, blind = F) #Para DEG
-ddslog_vis <- rlog(dds, blind = T) #Para visualizar
 
 ## --- Deteccion de batch effect ----
 
 # Almacenar la grafica
-plt <- plotPCA(ddslog, intgroup = "type")
+
+mat <- assay(ddslog)
+pca <- prcomp(t(mat))
+sigma <- pca$sdev^2/sum(pca$sdev^2) * 100
+pca_df <- data.frame(
+  PC1 = pca$x[, 1],
+  PC2 = pca$x[, 2],
+  type = metadata$type,
+  name = metadata$sample_id
+)
+
+pca_colors <- c(
+  "WT"               = "cornflowerblue",
+  "STEAP3 knockdown" = "firebrick1"
+)
+
+plt <- ggplot(pca_df, aes(x = PC1, y = PC2, color = type)) +
+  geom_mark_hull(                   
+    aes(fill = type, color = type),
+    alpha = 0.2,                   
+    linewidth = 0.8,
+    expand = unit(3, "mm")      
+  ) +
+  geom_point(size = 4, alpha = 0.9) +
+  geom_text_repel(aes(label = name), size = 3, show.legend = FALSE) +
+  scale_color_manual(values = pca_colors) +
+  labs(
+    x = sprintf("PC1 (%.2f%%)", sigma[1]),
+    y = sprintf("PC2 (%.2f%%)", sigma[2]),
+    color = "Group",
+    title = "PCA con batch effect"
+  ) +
+  theme_linedraw()
+
 ggsave(filename = paste0(figdir, "PCA_rlog.png"), plot = plt)
-#png(file = paste0(figdir, "PCA_rlog.png"))
-#plt <- plotPCA(ddslog_vis, intgroup = "type")
-#print(plt)
-#dev.off()
 
 # En la grafica de las primeras dos componentes principales son notorias las diferencias 
 # entre tipos de muestras con respecto a las componente principales que capturan su varianza, 
@@ -92,11 +120,35 @@ limma::removeBatchEffect(mat_norm, batch = ddslog$batch, design = mm)
 
 assay(ddslog) <- mat_norm
 
-pca_batch <- plotPCA(ddslog, intgroup = "type")
+mat_batch <- assay(ddslog)
+pca_batch <- prcomp(t(mat_batch))
+sigma_batch <- pca_batch$sdev^2/sum(pca_batch$sdev^2) * 100
+pca_batch_df <- data.frame(
+  PC1 = pca_batch$x[, 1],
+  PC2 = pca_batch$x[, 2],
+  type = metadata$type,
+  name = metadata$sample_id
+)
 
-pca_batch
+pca_batch_plot <- ggplot(pca_batch_df, aes(x = PC1, y = PC2, color = type)) +
+  geom_mark_hull(                   
+    aes(fill = type, color = type),
+    alpha = 0.2,                   
+    linewidth = 0.8,
+    expand = unit(3, "mm")      
+  ) +
+  geom_point(size = 4, alpha = 0.9) +
+  geom_text_repel(aes(label = name), size = 3, show.legend = F) +
+  scale_color_manual(values = pca_colors) +
+  labs(
+    x = sprintf("PC1 (%.2f%%)", sigma_batch[1]),
+    y = sprintf("PC2 (%.2f%%)", sigma_batch[2]),
+    color = "Group",
+    title = "PCA con batch effect corregido"
+  ) +
+  theme_linedraw()
 
-ggsave(filename = paste0(figdir, "PCA_no_batch_rlog.png"), plot = pca_batch)
+ggsave(filename = paste0(figdir, "PCA_no_batch_rlog.png"), plot = pca_batch_plot)
 
 ## ---- Obtener informacion del único contraste ----
 # results(dds, contrast=c("condition","treated","untreated"))
