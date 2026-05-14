@@ -101,19 +101,19 @@ editor_options:
 
 ## Resumen del BioProject
 
-El artículo “Silencing of STEAP3 suppresses cervical cancer cell
-proliferation and migration via JAK/STAT3 signaling pathway” propone
-investigar los mecanismos de STEAP3 en la proliferación y migración
-celular en cáncer cervical. SYEAP3 pertenece a la familia de las
-proteínas STEAP los cuáles se ha reportado que participan en la
+El artículo “Silencing of *STEAP3* suppresses cervical cancer cell
+proliferation and migration via *JAK/STAT3* signaling pathway” propone
+investigar los mecanismos de *STEAP3* en la proliferación y migración
+celular en cáncer cervical. *STEAP3* pertenece a la familia de las
+proteínas *STEAP* los cuáles se ha reportado que participan en la
 proliferación y metástasis del cáncer. Con RNA-seq se comparó la
-expresión de las vías de señalización en las cuáles participa STEAP3 en
-presencia de STEAP3 (NC) y con knockdown del gen (KD) en células de la
-línea celular HeLA.
+expresión de las vías de señalización en las cuáles participa *STEAP3*
+en presencia de *STEAP3* (NC) y con knockdown del gen (KD) en células de
+la línea celular HeLA.
 
 Se utilizaron todas las muestras del dataset, correspondiendo a 3
 réplicas biológicas de células de la línea celular HeLA con knockdown en
-el gen STEAP3. La información se encuentra en la **Tabla 2**.
+el gen *STEAP3*. La información se encuentra en la **Tabla 2**.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(DT)
@@ -481,9 +481,9 @@ siguientes parámetros:
 
 -   `--sjdbGTFfile` Recibe el archivo GTF del genoma de referencia
 
--   `--sjdbOverhang 149` Define el tamaño de la secuencia alrededor de
-    los splice junction (punto de unión entre dos exones), el valor
-    óptimo es `longitud read - 1`
+-   `--sjdbOverhang` Define el tamaño de la secuencia alrededor de los
+    splice junction (punto de unión entre dos exones), el valor óptimo
+    es `longitud read - 1`
 
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
@@ -540,7 +540,7 @@ Cargamos nuestra matriz de cuentas crudas generada y la metadata para,
 posteriormente, seleccionar los genes con más de 10 cuentas.
 
 Al convertirlas al formato dds, observamos que teníamos 6 muestras y
-17266 genes hasta este punto. Para después realizar las comparaciones,
+17,266 genes hasta este punto. Para después realizar las comparaciones,
 indicando cual es la referencia ("WT"). Guardamos el resultado de la
 salida en el archivo `results/STEAP3_KD_vs_WT.RData` el cual contiene la
 metadata y el archivo dds.
@@ -552,7 +552,7 @@ pocas muestras (\<30).
 
 Con el objeto resultante, se realizó un PCA con el objetivo de detectar
 batch effect. De esta forma, se observó que las 3 muestras con la
-condición Knockdown STEAP3 se agrupan, mientras que las 2 de las WT se
+condición Knockdown *STEAP3* se agrupan, mientras que las 2 de las WT se
 agrupan y la muestra restante se aleja de los dos clusters.
 
 ![PCA antes de corrección por *batch
@@ -569,7 +569,7 @@ effect*](figures/PCA_no_batch_rlog.png){width="1186"}
 
 Finalmente, se obtuvo la información de las muestras con el único
 contraste entre Wild-Type y Knockdown, que se guardó en el archivo
-results/DE_KD_vs_WT.csv. En el resumen de este, podemos observar que
+`results/DE_KD_vs_WT.csv`. En el resumen de este, podemos observar que
 dentro de los 17,266 genes previamente filtrados hubieron:
 
 -   744 con un LFC \> 0 (sobreexpresados)
@@ -978,7 +978,7 @@ coinciden con los reportados en nuestro trabajo.
 Además el artículo presenta un dotplot en el cual se visualizan las 20
 rutas más enriquecidas en KEGG, de la cual destacan la Vía de
 señalización JAK-STAT. Hacen énfasis debido a la participación del gen
-STEAP3 ya que debido a diversos estudios en los cuales se realizaron
+*STEAP3* ya que debido a diversos estudios en los cuales se realizaron
 mediciones de la expresión del gen y de marcas de metilación en la
 secuencia del gen en tejido de cáncer cervical, muestran significancia
 en comparación a una condición celular normal; además que encontraron
@@ -994,9 +994,9 @@ análisis.
 # Referencias
 
 -   Zhao, Z., Yu, P., Wang, Y., Li, H., Qiao, H., Sun, C., Zhu, L., &
-    Yang, P. (2024). Silencing of STEAP3 suppresses cervical cancer cell
-    proliferation and migration via JAK/STAT3 signaling pathway. *Cancer
-    & metabolism*, *12*(1), 40.
+    Yang, P. (2024). Silencing of *STEAP3* suppresses cervical cancer
+    cell proliferation and migration via JAK/STAT3 signaling
+    pathway. *Cancer & metabolism*, *12*(1), 40.
     <https://doi.org/10.1186/s40170-024-00370-2>
 
 -   Ferroptosis, un mecanismo de muerte celular presente en β-talasemia
