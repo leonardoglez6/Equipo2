@@ -70,7 +70,7 @@ ddslog_vis <- rlog(dds, blind = T) #Para visualizar
 ## --- Deteccion de batch effect ----
 
 # Almacenar la grafica
-plt <- plotPCA(ddslog_vis, intgroup = "type")
+plt <- plotPCA(ddslog, intgroup = "type")
 ggsave(filename = paste0(figdir, "PCA_rlog.png"), plot = plt)
 #png(file = paste0(figdir, "PCA_rlog.png"))
 #plt <- plotPCA(ddslog_vis, intgroup = "type")
