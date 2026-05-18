@@ -23,79 +23,83 @@ editor_options:
 
 # Descripción de los datos
 
-+--------------------------+--------------------------+
-| Descripción              | Información              |
-+==========================+==========================+
-| BioProject               | PRJNA1198873             |
-+--------------------------+--------------------------+
-| Especie                  | *Homo sapiens*           |
-+--------------------------+--------------------------+
-| Tipo de bibliotecas      | *paired-end*             |
-+--------------------------+--------------------------+
-| Método de selección      | Purificación de          |
-|                          | transcritos              |
-|                          | poliadenilados (poli-A)  |
-+--------------------------+--------------------------+
-| Número de transcriptomas | 6                        |
-+--------------------------+--------------------------+
-| Número de réplicas       | 3 replicas biológicas    |
-| biológicas               | por condición (control y |
-|                          | knockdown)               |
-+--------------------------+--------------------------+
-| Secuenciador empleado    | Illumina NovaSeq 6000    |
-+--------------------------+--------------------------+
-| Distribución de las      | -   **Control**: 3       |
-| muestras                 |     réplicas biológicas  |
-|                          |     WT (SRR31732089,     |
-|                          |     SRR31732090,         |
-|                          |     SRR31732091)         |
-|                          |                          |
-|                          | -   **Sobreexpresión**:  |
-|                          |     3 réplicas           |
-|                          |     biológicas con       |
-|                          |     knockdown de         |
-|                          |     *STEAP3*             |
-|                          |     (SRR31732086,        |
-|                          |     SRR31732087,         |
-|                          |     SRR31732088)\n       |
-+--------------------------+--------------------------+
-| Profundidad de           | 19 - 24 M seq            |
-| secuenciación de cada    |                          |
-| transcriptoma            |                          |
-+--------------------------+--------------------------+
-| Tamaño de las lecturas   | 148 bp                   |
-+--------------------------+--------------------------+
-| Artículo científico      | Zhao Z, Yu P, Wang Y, Li |
-|                          | H et al. Silencing of    |
-|                          | STEAP3 suppresses        |
-|                          | cervical cancer cell     |
-|                          | proliferation and        |
-|                          | migration via JAK/STAT3  |
-|                          | signaling pathway.       |
-|                          | Cancer Metab 2024 Dec    |
-|                          | 30;12(1):40. PM          |
-|                          | ID: [3973 675            |
-|                          | 1](htt                   |
-|                          | %20%2%200%2%200%20%20%20 |
-|                          | %20p%%20%2020%2%200s:%20 |
-|                          | %20%20//%20%%2020ww%20w% |
-|                          | %2020%%20%2020%%2020.%2% |
-|                          | 200n%%20%202%200c%20bi%2 |
-|                          | 0%2%20%200.n%20%%2020%%2 |
-|                          | 020%20l%20%20m.n%%%20202 |
-|                          | %200i%%202%%20200%%%2%20 |
-|                          | 02020h%2%200.%2%20%200g% |
-|                          | %2%20%200%2020o%%20%2020 |
-|                          | %20%20%20v%20/p%20%20ub% |
-|                          | 20%%202%200m%20ed/%203%2 |
-|                          | 0%%%2020209%20%%20%2%200 |
-|                          | %2020%%%2020207%2%2%200% |
-|                          | %202003%20%%202%200%%%20 |
-|                          | 202%20%2%2000%2%200%206% |
-|                          | 207%20%%20%%2020%20%202% |
-|                          | 200%205%20%%202%200%201  |
-|                          | "Link to PubMed record") |
-+--------------------------+--------------------------+
++-------------------------+-------------------------+
+| Descripción             | Información             |
++=========================+=========================+
+| BioProject              | PRJNA1198873            |
++-------------------------+-------------------------+
+| Especie                 | *Homo sapiens*          |
++-------------------------+-------------------------+
+| Tipo de bibliotecas     | *paired-end*            |
++-------------------------+-------------------------+
+| Método de selección     | Purificación de         |
+|                         | transcritos             |
+|                         | poliadenilados (poli-A) |
++-------------------------+-------------------------+
+| Número de               | 6                       |
+| transcriptomas          |                         |
++-------------------------+-------------------------+
+| Número de réplicas      | 3 replicas biológicas   |
+| biológicas              | por condición (control  |
+|                         | y knockdown)            |
++-------------------------+-------------------------+
+| Secuenciador empleado   | Illumina NovaSeq 6000   |
++-------------------------+-------------------------+
+| Distribución de las     | -   **Control**: 3      |
+| muestras                |     réplicas biológicas |
+|                         |     WT (SRR31732089,    |
+|                         |     SRR31732090,        |
+|                         |     SRR31732091)        |
+|                         |                         |
+|                         | -   **Sobreexpresión**: |
+|                         |     3 réplicas          |
+|                         |     biológicas con      |
+|                         |     knockdown de        |
+|                         |     *STEAP3*            |
+|                         |     (SRR31732086,       |
+|                         |     SRR31732087,        |
+|                         |     SRR31732088)\n      |
++-------------------------+-------------------------+
+| Profundidad de          | 19 - 24 M seq           |
+| secuenciación de cada   |                         |
+| transcriptoma           |                         |
++-------------------------+-------------------------+
+| Tamaño de las lecturas  | 148 bp                  |
++-------------------------+-------------------------+
+| Artículo científico     | Zhao Z, Yu P, Wang Y,   |
+|                         | Li H et al. Silencing   |
+|                         | of STEAP3 suppresses    |
+|                         | cervical cancer cell    |
+|                         | proliferation and       |
+|                         | migration via JAK/STAT3 |
+|                         | signaling pathway.      |
+|                         | Cancer Metab 2024 Dec   |
+|                         | 30;12(1):40. PM         |
+|                         | ID: [3973 675           |
+|                         | 1](htt%20%20%2%200%2%2  |
+|                         | 00%20%20%20%20%20p%%20% |
+|                         | 2020%2%200s:%20%20%20%2 |
+|                         | 0//%20%%2020ww%20w%%20% |
+|                         | 2020%%20%2020%%2020.%2% |
+|                         | %20200n%%20%202%200c%20 |
+|                         | bi%2%200%2%20%200.n%20% |
+|                         | %2020%%2%20020%20l%20%2 |
+|                         | 0m.n%%%20202%20%200i%%2 |
+|                         | 02%%20200%%%2%20%200202 |
+|                         | 0h%2%200.%2%20%200g%%20 |
+|                         | %2%20%200%2020o%%20%202 |
+|                         | 0%20%20%20%20v%20/p%20% |
+|                         | 20ub%%2020%%202%200m%20 |
+|                         | ed/%203%2%200%%%2020209 |
+|                         | %20%%20%2%200%20%2020%% |
+|                         | %2020207%2%2%200%%20%20 |
+|                         | 2003%20%%202%200%%%20%2 |
+|                         | 0202%20%2%2000%2%200%20 |
+|                         | 6%%20207%20%%20%%2020%2 |
+|                         | 0%202%%20200%205%20%%20 |
+|                         | 2%200%201%20%22Link%20t |
+|                         | o%20PubMed%20record%22) |
++-------------------------+-------------------------+
 
 : Tabla 1: Detalles del Bioproyecto y características de las muestras
 
@@ -147,9 +151,9 @@ datatable(
 
 # Estructura del trabajo
 
-La **estructura** de las carpetas dentro del cluster se puede observar a
+La **estructura** de las carpetas dentro del GitHub se puede observar a
 continuación, la cual contiene carpetas compartidas con la estructura
-dentro de Github:
+dentro del cluster:
 
 ```         
 ├── Equipo2.Rproj
@@ -333,7 +337,7 @@ normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 19M - 24.7M.
 
 ![Contenido de GC de los datos
-crudos](figures/fastqc_per_sequence_gc_content_plot.png)
+crudos](figures/fastqc_per_sequence_gc_content_plot_raw.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
@@ -341,26 +345,26 @@ superior a 35. De igual forma, las muestras tienen un promedio de
 calidad con un pico máximo en Phred 36.
 
 ![Calidad por base de los datos
-crudos](figures/fastqc_per_base_sequence_quality_plot.png)
+crudos](figures/fastqc_per_base_sequence_quality_plot_raw.png)
 
 ![Calidad por secuencia de los datos
-crudos](figures/fastqc_per_sequence_quality_scores_plot.png)
+crudos](figures/fastqc_per_sequence_quality_scores_plot_raw.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores.
 
 ![Contenido de bases indeterminadas de los datos
-crudos](figures/fastqc_per_base_n_content_plot.png)
+crudos](figures/fastqc_per_base_n_content_plot_raw.png)
 
 ![Pruebas secuencias sobrerrepresentadas y contenido de adaptadores de
-los datos crudos](figures/fastqc_adapters.png){width="1037"}
+los datos crudos](figures/fastqc_adapters_raw.png)
 
 Sin embargo, se identificaron secuencias duplicadas, que posiblemente
 puedan estar relacionadas con la presencia de dímeros de adaptadores.
 
 ![Secuencias duplicadas de los datos
-crudos](figures/fastqc_sequence_duplication_levels_plot.png)
+crudos](figures/fastqc_sequence_duplication_levels_plot_raw.png)
 
 ### Conclusión de la calidad de los datos crudos
 
@@ -403,9 +407,9 @@ ruta
 
 ## 4. Análisis de calidad de las secuencias de los datos procesados
 
-Se realizó el análisis de calidad de las 6 muestras tras el trimming con
-el programa **FastQC**, primero de forma individual y después generando
-un MultiQC.
+Seguido del trimming, se realizó el análisis de calidad de las 6
+muestras con el programa **FastQC**, primero de forma individual y
+después generando un MultiQC.
 
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
@@ -416,25 +420,26 @@ normal, característica de un resultado esperado de buena calidad, y una
 cobertura que varía del rango de 17.9M - 23.2M.
 
 ![Contenido de GC de los datos
-procesados](figures/fastqc_per_sequence_gc_content_plot-01.png)
+procesados](figures/fastqc_per_sequence_gc_content_plot_processed.png)
 
 Las muestras tienen una calidad óptima dentro de las posiciones de las
 lecturas, con valores dentro de la zona verde y un puntaje Phred
 superior a 36.
 
 ![Calidad por base de los datos
-procesados](figures/fastqc_per_base_sequence_quality_plot-01.png)
+procesados](figures/fastqc_per_base_sequence_quality_plot_processed.png)
 
 ![Calidad por secuencia de los datos
-procesados](figures/fastqc_per_sequence_quality_scores_plot-01.png)
+procesados](figures/fastqc_per_sequence_quality_scores_plot_processed.png)
 
 El porcentaje de contenido de bases indeterminadas (N) en los reads
 superó la prueba, así como la prueba de secuencias sobrerepresentadas y
 no se encontraron muestras con contaminación de adaptadores los cuales
-fueron removidos utilizando `trimmomatic` versión 0.33.
+fueron removidos utilizando `trimmomatic` versión 0.33. A su vez,
+realizar el trimming nos ayudó a quitar lecturas de mala calidad.
 
 ![Contenido de bases indeterminadas de los datos
-procesados](figures/fastqc_per_base_n_content_plot-01.png)
+procesados](figures/fastqc_per_base_n_content_plot_processed.png)
 
 ![Pruebas secuencias sobrerrepresentadas y contenido de adaptadores de
 los datos
@@ -444,10 +449,13 @@ La presencia de secuencias duplicadas se mantuvo como una prueba
 fallida, sin embargo, son resultados esperados al realizar RNA-seq.
 
 ![Secuencias duplicadas de los datos
-procesados](figures/fastqc_sequence_duplication_levels_plot-01.png)
+procesados](figures/fastqc_sequence_duplication_levels_plot_processed.png)
 
-Se encuentra un sesgo en las primeras 15 bases en la gráfica de Per base
-sequence content, sin embargo, se reporta que es normal para RNA-seq.
+Se encuentra un sesgo en las primeras 15 bases en la gráfica de
+contenido por base, sin embargo, se reporta que es normal para RNA-seq.
+
+![Contenido por
+base](figures/fastqc_per_base_sequence_content_processed.png)
 
 ### Conclusión de la calidad de datos procesados
 
@@ -548,7 +556,7 @@ metadata y el archivo dds.
 Posteriormente, se realizó la normalización de los datos para que poder
 comparar los niveles de expresión entre muestras, evitando sesgos
 técnicos y biológicos. Utilizamos la función rlog debido a que tenemos
-pocas muestras (<30).
+pocas muestras (\<30).
 
 Con el objeto resultante, se realizó un PCA con el objetivo de detectar
 batch effect. De esta forma, se observó que las 3 muestras con la
@@ -633,7 +641,7 @@ observar la cantidad de vías metabólicas observadas en cada base de
 datos, representadas por un punto del color correspondiente.
 
 Las bases de datos que escogimos fueron: Gene Ontology - Biological
-Process (GO:BP), KEGG, Reactome (REAC), Transfac (TF), miRTarBase
+Process (<GO:BP>), KEGG, Reactome (REAC), Transfac (TF), miRTarBase
 (MIRNA), Human Protein Atlas (HPA), CORUM, Human Phenotype Ontology (HP)
 y WikiPathways (WP).
 
