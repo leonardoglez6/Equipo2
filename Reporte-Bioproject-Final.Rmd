@@ -75,15 +75,21 @@ editor_options:
 
 ## Resumen del BioProject
 
-El artículo “Silencing of *STEAP3* suppresses cervical cancer cell
-proliferation and migration via *JAK/STAT3* signaling pathway” propone
-investigar los mecanismos de *STEAP3* en la proliferación y migración
-celular en cáncer cervical. *STEAP3* pertenece a la familia de las
-proteínas *STEAP* los cuáles se ha reportado que participan en la
-proliferación y metástasis del cáncer. Con RNA-seq se comparó la
-expresión de las vías de señalización en las cuáles participa *STEAP3*
-en presencia de *STEAP3* (NC) y con knockdown del gen (KD) en células de
-la línea celular HeLA.
+Basado en el artículo "Silencing of *STEAP3* suppresses cervical cancer cell
+proliferation and migration via *JAK/STAT3* signaling pathway” se comparó el 
+perfil transcripcional, a partir de secuencias en archivos FASTQ de 6 muestras
+de la línea celular HeLa divididas en 2 grupos, uno control y otro al que se 
+deletó el gen *STEAP3*. Se realizó un alineamiento y conteo con STAR debido a 
+la facilidad de trabajar con este programa ya que no se necesita crear un 
+archivo .txi para importar los datos a R; posteriormente se realizó el análisis 
+de expresión diferencial con DESeq2 y el enriquecimiento funcional con 
+gProfiler2 y clusterprofiler para obtener un enriquecimiento de GO Biological 
+Process y de KEGG pathways. Se encontraron 3 genes subregulados y 12 genes 
+sobreexpresados, destacando los genes SERPINB3/4 asociados a la sensibilidad al 
+tratamiento de cáncer cervical, además el gen *STEAP3* se encuentra subregulado 
+como era esperado. La vía de la ferrotopsis se encuentra enriquecida debido a 
+la subregulación de *STEAP3*, la cuál está relacionada con la muerte celular, 
+el cuál es un mecanismo comúnmente relacionado con el cáncer.
 
 Se utilizaron todas las muestras del dataset, correspondiendo a 3
 réplicas biológicas de células de la línea celular HeLA con knockdown en
