@@ -6,6 +6,8 @@
 
 **Semestre:** 4to semestre
 
+**Link de página web:** https://leonardoglez6.github.io/Equipo2/
+
 ## Integrantes del equipo 👥
 
 -   **Equipo:** 2
