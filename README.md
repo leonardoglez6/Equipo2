@@ -35,6 +35,8 @@ La estructura del proyecto dentro del repositorio de GitHub es la siguiente:
 
 - **Reporte-Bioproject-Final.html**: Reporte renderizado en formato html.
 
+- **Infografia-Cientifica-Proyecto.pdf**: Infografía del flujo de trabajo y conclusiones para público general.
+
 - **metadata.csv**: Archivo que contiene la metadata utilizada en los scrpits.
 
 | SampleID    | Condición        |
@@ -116,7 +118,7 @@ Contiene todas las figuras que se encuentran en el directorio `/figures` fuera d
 
 - **07_Load_data_STAR.R**: Carga las matrices de cuentas crudas de cada muestra y genera una matriz de cuentas crudas conjunta.
 
-- **S07_Load_data_STAR.sh**: Job de slurm para correr el archvo 07_Load_data_STAR.R.
+- **S07_Load_data_STAR.sh**: Job de slurm para correr el archivo 07_Load_data_STAR.R.
 
 - **08_DEG_STAR_KD.R**: Realiza la corrección por batch effect de los datos y el análisis de expresión diferencial.
 
@@ -176,7 +178,7 @@ library(tidyverse) #versión 2.0.0
 
 3. Se realizó el procesamiento de las secuencias crudas quitando secuencias de adaptadores y de mala calidad. Se generaron 24 archivos FASTQ de secuencias procesadas, 2 archivos procesados (trimmed y unpaired) por cada archivo de secuencia cruda. Se utilizó el script `03_Trimmed.sh`.
 
-4. Se reaizaron los reportes de calidad fastqc y multiqc de los archivos de secuencia procesados. Se utilizó el script `*04_Quality_trimmed.sh`.
+4. Se realizaron los reportes de calidad fastqc y multiqc de los archivos de secuencia procesados. Se utilizó el script `*04_Quality_trimmed.sh`.
 
 5. Se realizaron enlaces simbólicos al genoma de referencia humano versión GRCh38.p14 y a su archivo de anotación. 
 
@@ -186,21 +188,39 @@ library(tidyverse) #versión 2.0.0
 
 8. Se realizó la importación de las matrices de cuentas generada en el paso anterior a R. Se generó una matriz de cuentas conjunta de todas las muestras y se cargó el archivo de metadata; ambos objetos se guardaron en un .Rdata. Se utilizó el script `S07_Load_data_STAR.sh` para correr el Rscript `07_Load_data_STAR.R`.
 
-9. Se utilizó la matriz de cuentas generada en el paso anterior para realizar la visualización del batch effect de los datos y su corrección; también se generó el objeto que contiene a la matriz de expresión diferencial de los genes. Se utulizó el scriot `S08_DEG_STAR_KD.sh` para correr el Rscript `.08_DEG_STAR_KD.R`.
+9. Se utilizó la matriz de cuentas generada en el paso anterior para realizar la visualización del batch effect de los datos y su corrección; también se generó el objeto que contiene a la matriz de expresión diferencial de los genes. Se utilizó el script `S08_DEG_STAR_KD.sh` para correr el Rscript `.08_DEG_STAR_KD.R`.
 
-10. Se utiizó la matriz de expresión diferencial para realizar un volcanoplot de los genes con un log2FoldChange ≥ 2 y ≤ 2; además se realizó un heatmap con los 20 genes expresados diferencialmente con un p-value más significativo. Se utulizó el scriot `S09_Visualization_data_STAR.sh` para correr el Rscript `09_Visualization_data_STAR.R`.
+10. Se utiizó la matriz de expresión diferencial para realizar un volcanoplot de los genes con un log2FoldChange ≥ 2 y ≤ 2; además se realizó un heatmap con los 20 genes expresados diferencialmente con un p-value más significativo. Se utilizó el script `S09_Visualization_data_STAR.sh` para correr el Rscript `09_Visualization_data_STAR.R`.
 
-11. Se utilizó la matriz de expresi´pn diferencial para realizar un Manhattan plot con los términos GO más enriquecidos, barplots de genes sobreexpresados y subregulados y un dotplot de las vías de KEGG más enriquecidas. Se utulizó el scriot `S10_GO_terms_STAR.sh` para correr el Rscript `10_GO_terms_STAR.R`.
+11. Se utilizó la matriz de expresión diferencial para realizar un Manhattan plot con los términos GO más enriquecidos, barplots de genes sobreexpresados y subregulados y un dotplot de las vías de KEGG más enriquecidas. Se utilizó el script `S10_GO_terms_STAR.sh` para correr el Rscript `10_GO_terms_STAR.R`.
 
 
 ## Referencias
 
 -   Zhao, Z., Yu, P., Wang, Y., Li, H., Qiao, H., Sun, C., Zhu, L., &
-    Yang, P. (2024). Silencing of STEAP3 suppresses cervical cancer cell
-    proliferation and migration via JAK/STAT3 signaling pathway. *Cancer
-    & metabolism*, *12*(1), 40.
+    Yang, P. (2024). Silencing of *STEAP3* suppresses cervical cancer
+    cell proliferation and migration via JAK/STAT3 signaling
+    pathway. *Cancer & metabolism*, *12*(1), 40.
     <https://doi.org/10.1186/s40170-024-00370-2>
-    
--   Ferroptosis, un mecanismo de muerte celular presente en β-talasemia
-    menor. (2024). *Revista Bioquímica Y Patología Clínica*, *89*(1),
+
+-   Terán, M., Mónaco, M., Haro, C., Ledesma, M. *et al*. Ferroptosis,
+    un mecanismo de muerte celular presente en β-talasemia menor.
+    (2024). *Revista Bioquímica Y Patología Clínica*, *89*(1),
     19-26. <https://doi.org/10.62073/k7g1yk82>
+
+-   Han, Y., Fu, L., Kong, Y., Jiang, C., Huang, L., & Zhang, H. (2024).
+    STEAP3 Affects Ovarian Cancer Progression by Regulating Ferroptosis
+    through the p53/SLC7A11 Pathway. *Mediators of inflammation*,
+    *2024*, 4048527. <https://doi.org/10.1155/2024/4048527>
+
+-   Wang, S., Luke, C.J., Pak, S.C. *et al.* SERPINB3 (SCCA1) inhibits
+    cathepsin L and lysoptosis, protecting cervical cancer cells from
+    chemoradiation. *Commun Biol* **5**, 46 (2022).
+    <https://doi.org/10.1038/s42003-021-02893-6>
+
+-   Li, X., Lu, M., Yuan, M., Ye, J., Zhang, W., Xu, L., Wu, X., Hui,
+    B., Yang, Y., Wei, B., Guo, C., Wei, M., Dong, J., Wu, X., & Gu, Y.
+    (2022). CXCL10-armed oncolytic adenovirus promotes
+    tumor-infiltrating T-cell chemotaxis to enhance anti-PD-1 therapy.
+    *Oncoimmunology*, *11*(1), 2118210.
+    <https://doi.org/10.1080/2162402X.2022.2118210>

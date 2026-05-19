@@ -21,75 +21,87 @@ editor_options:
 
 # Descripción de los datos
 
-+-----------------------+---------------------------------------------------------------+
-| Descripción           | Información                                                   |
-+=======================+===============================================================+
-| BioProject            | PRJNA1198873                                                  |
-+-----------------------+---------------------------------------------------------------+
-| Especie               | *Homo sapiens*                                                |
-+-----------------------+---------------------------------------------------------------+
-| Tipo de bibliotecas   | *paired-end*                                                  |
-+-----------------------+---------------------------------------------------------------+
-| Método de selección   | Purificación de transcritos poliadenilados (poli-A)           |
-+-----------------------+---------------------------------------------------------------+
-| Número de             | 6                                                             |
-| transcriptomas        |                                                               |
-+-----------------------+---------------------------------------------------------------+
-| Número de réplicas    | 3 replicas biológicas por condición (control y knockdown)     |
-| biológicas            |                                                               |
-+-----------------------+---------------------------------------------------------------+
-| Secuenciador empleado | Illumina NovaSeq 6000                                         |
-+-----------------------+---------------------------------------------------------------+
-| Distribución de las   | -   **Control**: 3 réplicas biológicas WT (SRR31732089,       |
-| muestras              |     SRR31732090, SRR31732091)                                 |
-|                       |                                                               |
-|                       | -   **Sobreexpresión**: 3 réplicas biológicas con knockdown   |
-|                       |     de *STEAP3* (SRR31732086, SRR31732087, SRR31732088)\n     |
-+-----------------------+---------------------------------------------------------------+
-| Profundidad de        | 19 - 24 M seq                                                 |
-| secuenciación de cada |                                                               |
-| transcriptoma         |                                                               |
-+-----------------------+---------------------------------------------------------------+
-| Tamaño de las         | 148 bp                                                        |
-| lecturas              |                                                               |
-+-----------------------+---------------------------------------------------------------+
-| Artículo científico   | Zhao Z, Yu P, Wang Y, Li H et al. Silencing of STEAP3         |
-|                       | suppresses cervical cancer cell proliferation and migration   |
-|                       | via JAK/STAT3 signaling pathway. Cancer Metab 2024 Dec        |
-|                       | 30;12(1):40. PM ID: [3973 675                                 |
-|                       | 1                                                             |
-|                       | ](htt%20%20%2%200%2%2%20%2000%20%20%20%20%20p%%20%20%%202020% |
-|                       | 2%200s:%20%20%20%20%2%200//%20%%202%200ww%20w%%20%%202020%%2% |
-|                       | 200%2020%%2020.%2%%20%20%20200n%%20%202%200c%20%2%200bi%2%200 |
-|                       | %2%20%200.n%2%200%%20%2020%%2%20020%20%20l%20%2%200m.n%%%2020 |
-|                       | 2%%2020%200i%%2%2002%%20200%20%%%2%20%200202%200h%2%%20200.%2 |
-|                       | %20%200g%%20%20%%202%20%200%2020o%%20%202%20%200%20%20%20%20v |
-|                       | %20/p%20%20%%2020ub%%2020%%202%20%200m%20%20ed/%203%2%2%2000% |
-|                       | %%2020209%20%20%%20%20%2%200%20%2020%%%20%20%2020207%2%2%200% |
-|                       | %20%20%2%2002003%20%%202%200%%%20%20%2%200202%20%2%2000%2%%20 |
-|                       | 200%20%206%%20207%20%%%2020%%2020%2%200%202%%20%20200%205%20% |
-|                       | %20%202%200%20%201%20%22Link%20t%20o%20%20PubMed%20record%22) |
-+-----------------------+---------------------------------------------------------------+
++------------------+---------------------------------------------------+
+| Descripción      | Información                                       |
++==================+===================================================+
+| BioProject       | PRJNA1198873                                      |
++------------------+---------------------------------------------------+
+| Especie          | *Homo sapiens*                                    |
++------------------+---------------------------------------------------+
+| Tipo de          | *paired-end*                                      |
+| bibliotecas      |                                                   |
++------------------+---------------------------------------------------+
+| Método de        | Purificación de transcritos poliadenilados        |
+| selección        | (poli-A)                                          |
++------------------+---------------------------------------------------+
+| Número de        | 6                                                 |
+| transcriptomas   |                                                   |
++------------------+---------------------------------------------------+
+| Número de        | 3 replicas biológicas por condición (control y    |
+| réplicas         | knockdown)                                        |
+| biológicas       |                                                   |
++------------------+---------------------------------------------------+
+| Secuenciador     | Illumina NovaSeq 6000                             |
+| empleado         |                                                   |
++------------------+---------------------------------------------------+
+| Distribución de  | -   **Control**: 3 réplicas biológicas WT         |
+| las muestras     |     (SRR31732089, SRR31732090, SRR31732091)       |
+|                  |                                                   |
+|                  | -   **Sobreexpresión**: 3 réplicas biológicas con |
+|                  |     knockdown de *STEAP3* (SRR31732086,           |
+|                  |     SRR31732087, SRR31732088)\n                   |
++------------------+---------------------------------------------------+
+| Profundidad de   | 19 - 24 M seq                                     |
+| secuenciación de |                                                   |
+| cada             |                                                   |
+| transcriptoma    |                                                   |
++------------------+---------------------------------------------------+
+| Tamaño de las    | 148 bp                                            |
+| lecturas         |                                                   |
++------------------+---------------------------------------------------+
+| Artículo         | Zhao Z, Yu P, Wang Y, Li H et al. Silencing of    |
+| científico       | STEAP3 suppresses cervical cancer cell            |
+|                  | proliferation and migration via JAK/STAT3         |
+|                  | signaling pathway. Cancer Metab 2024 Dec          |
+|                  | 30;12(1):40. PM ID: [3973 675                     |
+|                  | 1](htt%20%20%2%2                                  |
+|                  | 00%2%2%20%2000%20%20%20%20%20p%%20%20%%202020%%20 |
+|                  | 2%200s:%20%20%20%20%2%200//%20%%202%200ww%20w%%20 |
+|                  | %%202020%%2%%20200%2020%%2020.%2%%20%20%20200n%%2 |
+|                  | 0%202%200c%20%2%200bi%2%200%20%2%20%200.n%2%200%% |
+|                  | 20%2020%%2%20020%20%20l%20%2%200m.n%%%2020%202%%2 |
+|                  | 020%200i%%2%2002%%20200%20%%%2%20%200202%200h%2%% |
+|                  | 20200.%2%20%20%200g%%20%20%%202%20%200%2020o%%20% |
+|                  | 202%20%200%20%20%20%20v%20%20/p%20%20%%2020ub%%20 |
+|                  | 20%%202%20%200m%20%20ed/%203%2%2%2000%%20%%202020 |
+|                  | 9%20%20%%20%20%2%200%20%2020%%%20%20%2020207%2%2% |
+|                  | 200%%20%20%20%2%2002003%20%%202%200%%%20%20%2%200 |
+|                  | 202%20%2%2000%2%%20%20200%20%206%%20207%20%%%2020 |
+|                  | %%2020%2%200%202%%20%20200%205%20%%20%20%202%200% |
+|                  | 20%201%20%22Link%20t%20o%20%20PubMed%20record%22) |
++------------------+---------------------------------------------------+
 
 : Tabla 1: Detalles del Bioproyecto y características de las muestras
 
 ## Resumen del BioProject
 
-Basado en el artículo "Silencing of *STEAP3* suppresses cervical cancer cell
-proliferation and migration via *JAK/STAT3* signaling pathway” se comparó el 
-perfil transcripcional, a partir de secuencias en archivos FASTQ de 6 muestras
-de la línea celular HeLa divididas en 2 grupos, uno control y otro al que se 
-deletó el gen *STEAP3*. Se realizó un alineamiento y conteo con STAR debido a 
-la facilidad de trabajar con este programa ya que no se necesita crear un 
-archivo .txi para importar los datos a R; posteriormente se realizó el análisis 
-de expresión diferencial con DESeq2 y el enriquecimiento funcional con 
-gProfiler2 y clusterprofiler para obtener un enriquecimiento de GO Biological 
-Process y de KEGG pathways. Se encontraron 3 genes subregulados y 12 genes 
-sobreexpresados, destacando los genes SERPINB3/4 asociados a la sensibilidad al 
-tratamiento de cáncer cervical, además el gen *STEAP3* se encuentra subregulado 
-como era esperado. La vía de la ferrotopsis se encuentra enriquecida debido a 
-la subregulación de *STEAP3*, la cuál está relacionada con la muerte celular, 
-el cuál es un mecanismo comúnmente relacionado con el cáncer.
+Basado en el artículo "Silencing of *STEAP3* suppresses cervical cancer
+cell proliferation and migration via *JAK/STAT3* signaling pathway” se
+comparó el perfil transcripcional, a partir de secuencias en archivos
+FASTQ de 6 muestras de la línea celular HeLa divididas en 2 grupos, uno
+control y otro al que se deletó el gen *STEAP3*. Se realizó un
+alineamiento y conteo con STAR debido a la facilidad de trabajar con
+este programa ya que no se necesita crear un archivo .txi para importar
+los datos a R; posteriormente se realizó el análisis de expresión
+diferencial con DESeq2 y el enriquecimiento funcional con gProfiler2 y
+clusterprofiler para obtener un enriquecimiento de GO Biological Process
+y de KEGG pathways. Se encontraron 3 genes subregulados y 12 genes
+sobreexpresados, destacando los genes *SERPINB3/4* asociados a la
+sensibilidad al tratamiento de cáncer cervical, además el gen *STEAP3*
+se encuentra subregulado como era esperado. La vía de la ferrotopsis se
+encuentra enriquecida debido a la subregulación de *STEAP3*, la cuál
+está relacionada con la muerte celular, el cuál es un mecanismo
+comúnmente relacionado con el cáncer.
 
 Se utilizaron todas las muestras del dataset, correspondiendo a 3
 réplicas biológicas de células de la línea celular HeLA con knockdown en
@@ -730,7 +742,7 @@ igual que los autores.
 La siguiente tabla pertenece a una tabla suplementaria del artículo en
 la cual enlista todos los DEGs, su Log2FoldChange, p-value y FDR.
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 filas <- rbind(
   c("STEAP3", 0.18, -2.46, 0.00, 0.00),
   c("SERPINB3", 5.29, 2.40, 0.00, 0.00),
@@ -1022,6 +1034,9 @@ análisis.
 cell proliferation and migration via JAK/STAT3 signaling
 pathway."](figures/Dotplot-articulo-original.jpeg){width="427"}
 
+
+---
+
 Por otro lado, la importancia de la expresión de *STEAP3* no solo ha
 sido reportada para el cáncer de cuello uterino. Como se menciona en
 Han, Y., *et al*., cuando *STEAP3* se encuentra sobreexpresado en
@@ -1041,6 +1056,8 @@ Con ello, podemos concluir que el silenciamiento de *STEAP3* puede
 inhibir el crecimiento de diversos tumores y que puede hacerlo mediante
 vías distintas a JAK-STAT.
 
+---
+
 Referente a los otros genes que tenían una expresión diferenciada,
 pudimos complementar nuestro análisis al informarnos de otras funciones
 de algunos genes y la relación con el cáncer cervical reportada en la
@@ -1059,10 +1076,12 @@ este gen tiene funciones de protección ante daño lisosomal y muerte
 organismal al inhibir la actividad de proteasa de cisteína inducida por
 estreses como daño al DNA y especies reactivas de oxígeno.
 
+---
+
 Por otro lado, podemos analizar la relación de la sobreexpresión de
 *CXCL10* con la supresión de la proliferación celular.
 
-De acuerdo con Li, X., et al. donde se creo un adenovirus oncolítico
+De acuerdo con Li, X., *et al.* donde se creo un adenovirus oncolítico
 recombinante modificado genéticamente para expresar la quimiocina
 *CXCL10*, la expresión continua de *CXCL10* en el interior del tumor,
 atrae a las células T, que expresan el receptor *CXCR3* (ubicado en la
@@ -1073,6 +1092,24 @@ incrementando la infiltración de células T en el microambiente tumoral.
 
 Podemos concluir que la sobreexpresión de este gen es coherente como una
 respuesta de la célula para suprimir la proliferación celular.
+
+---
+
+Algunas limitaciones de nuestro análisis fue que se utilizaron
+diferentes programas en el desarrollo de nuestro análisis, comparado con
+el artículo de referencia. Esto redujo la cantidad de DEGs, por lo que
+no se tuvieron resultados iguales. Sin embargo, logramos identificar
+algunas similitudes en las rutas enriquecidas como ferroptosis. Creemos
+que se podría mejorar el análisis al incorporar elementos de su flujo de
+trabajo, pero manteniendo los criterios establecidos para un análisis de
+calidad. De igual forma, podríamos mejorar nuestro trabajo al emplear
+flujos de trabajo de Nextflow.
+
+Otra limitación sería la poca cantidad de muestras obtenidas en el
+experimento. Tener más muestras biológicas nos podría ayudar a que se
+delimitaran más las diferencias entre muestras de un mismo grupo, como
+se vio en el grupo control al analizar el PCA del batch effect. Esto nos
+ayudaría a que nuestro análisis fuera más robusto.
 
 # Referencias
 
