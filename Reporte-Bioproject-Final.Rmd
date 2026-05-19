@@ -1,6 +1,6 @@
 ---
 title: "Reporte BioProject Equipo 2"
-author: "Leonardo González López, Yuliana Denisse Sosa Gómez, Efrén Nosedal González"
+author: "Leonardo González López, Yuliana Denisse Sosa Gómez"
 date: "`r Sys.Date()`"
 output: html_document
 editor_options: 
@@ -16,90 +16,60 @@ editor_options:
 
     -   Leonardo González López (lgonzalez) -
         [minestev17\@gmail.com](mailto:minestev17@gmail.com){.email},
-    -   Efrén Nosedal González (enosedal) -
-        [enosedal\@gmail.com](enosedal@gmail.com),
     -   Yuliana Denisse Sosa Gómez (ysosa) -
         [yuliana.sogo2006\@gmail.com](mailto:yuliana.sogo2006@gmail.com){.email}
 
 # Descripción de los datos
 
-+-------------------------+-------------------------+
-| Descripción             | Información             |
-+=========================+=========================+
-| BioProject              | PRJNA1198873            |
-+-------------------------+-------------------------+
-| Especie                 | *Homo sapiens*          |
-+-------------------------+-------------------------+
-| Tipo de bibliotecas     | *paired-end*            |
-+-------------------------+-------------------------+
-| Método de selección     | Purificación de         |
-|                         | transcritos             |
-|                         | poliadenilados (poli-A) |
-+-------------------------+-------------------------+
-| Número de               | 6                       |
-| transcriptomas          |                         |
-+-------------------------+-------------------------+
-| Número de réplicas      | 3 replicas biológicas   |
-| biológicas              | por condición (control  |
-|                         | y knockdown)            |
-+-------------------------+-------------------------+
-| Secuenciador empleado   | Illumina NovaSeq 6000   |
-+-------------------------+-------------------------+
-| Distribución de las     | -   **Control**: 3      |
-| muestras                |     réplicas biológicas |
-|                         |     WT (SRR31732089,    |
-|                         |     SRR31732090,        |
-|                         |     SRR31732091)        |
-|                         |                         |
-|                         | -   **Sobreexpresión**: |
-|                         |     3 réplicas          |
-|                         |     biológicas con      |
-|                         |     knockdown de        |
-|                         |     *STEAP3*            |
-|                         |     (SRR31732086,       |
-|                         |     SRR31732087,        |
-|                         |     SRR31732088)\n      |
-+-------------------------+-------------------------+
-| Profundidad de          | 19 - 24 M seq           |
-| secuenciación de cada   |                         |
-| transcriptoma           |                         |
-+-------------------------+-------------------------+
-| Tamaño de las lecturas  | 148 bp                  |
-+-------------------------+-------------------------+
-| Artículo científico     | Zhao Z, Yu P, Wang Y,   |
-|                         | Li H et al. Silencing   |
-|                         | of STEAP3 suppresses    |
-|                         | cervical cancer cell    |
-|                         | proliferation and       |
-|                         | migration via JAK/STAT3 |
-|                         | signaling pathway.      |
-|                         | Cancer Metab 2024 Dec   |
-|                         | 30;12(1):40. PM         |
-|                         | ID: [3973 675           |
-|                         | 1](htt%20%20%2%200%2%2  |
-|                         | 00%20%20%20%20%20p%%20% |
-|                         | 2020%2%200s:%20%20%20%2 |
-|                         | 0//%20%%2020ww%20w%%20% |
-|                         | 2020%%20%2020%%2020.%2% |
-|                         | %20200n%%20%202%200c%20 |
-|                         | bi%2%200%2%20%200.n%20% |
-|                         | %2020%%2%20020%20l%20%2 |
-|                         | 0m.n%%%20202%20%200i%%2 |
-|                         | 02%%20200%%%2%20%200202 |
-|                         | 0h%2%200.%2%20%200g%%20 |
-|                         | %2%20%200%2020o%%20%202 |
-|                         | 0%20%20%20%20v%20/p%20% |
-|                         | 20ub%%2020%%202%200m%20 |
-|                         | ed/%203%2%200%%%2020209 |
-|                         | %20%%20%2%200%20%2020%% |
-|                         | %2020207%2%2%200%%20%20 |
-|                         | 2003%20%%202%200%%%20%2 |
-|                         | 0202%20%2%2000%2%200%20 |
-|                         | 6%%20207%20%%20%%2020%2 |
-|                         | 0%202%%20200%205%20%%20 |
-|                         | 2%200%201%20%22Link%20t |
-|                         | o%20PubMed%20record%22) |
-+-------------------------+-------------------------+
++-----------------------+---------------------------------------------------------------+
+| Descripción           | Información                                                   |
++=======================+===============================================================+
+| BioProject            | PRJNA1198873                                                  |
++-----------------------+---------------------------------------------------------------+
+| Especie               | *Homo sapiens*                                                |
++-----------------------+---------------------------------------------------------------+
+| Tipo de bibliotecas   | *paired-end*                                                  |
++-----------------------+---------------------------------------------------------------+
+| Método de selección   | Purificación de transcritos poliadenilados (poli-A)           |
++-----------------------+---------------------------------------------------------------+
+| Número de             | 6                                                             |
+| transcriptomas        |                                                               |
++-----------------------+---------------------------------------------------------------+
+| Número de réplicas    | 3 replicas biológicas por condición (control y knockdown)     |
+| biológicas            |                                                               |
++-----------------------+---------------------------------------------------------------+
+| Secuenciador empleado | Illumina NovaSeq 6000                                         |
++-----------------------+---------------------------------------------------------------+
+| Distribución de las   | -   **Control**: 3 réplicas biológicas WT (SRR31732089,       |
+| muestras              |     SRR31732090, SRR31732091)                                 |
+|                       |                                                               |
+|                       | -   **Sobreexpresión**: 3 réplicas biológicas con knockdown   |
+|                       |     de *STEAP3* (SRR31732086, SRR31732087, SRR31732088)\n     |
++-----------------------+---------------------------------------------------------------+
+| Profundidad de        | 19 - 24 M seq                                                 |
+| secuenciación de cada |                                                               |
+| transcriptoma         |                                                               |
++-----------------------+---------------------------------------------------------------+
+| Tamaño de las         | 148 bp                                                        |
+| lecturas              |                                                               |
++-----------------------+---------------------------------------------------------------+
+| Artículo científico   | Zhao Z, Yu P, Wang Y, Li H et al. Silencing of STEAP3         |
+|                       | suppresses cervical cancer cell proliferation and migration   |
+|                       | via JAK/STAT3 signaling pathway. Cancer Metab 2024 Dec        |
+|                       | 30;12(1):40. PM ID: [3973 675                                 |
+|                       | 1                                                             |
+|                       | ](htt%20%20%2%200%2%2%20%2000%20%20%20%20%20p%%20%20%%202020% |
+|                       | 2%200s:%20%20%20%20%2%200//%20%%202%200ww%20w%%20%%202020%%2% |
+|                       | 200%2020%%2020.%2%%20%20%20200n%%20%202%200c%20%2%200bi%2%200 |
+|                       | %2%20%200.n%2%200%%20%2020%%2%20020%20%20l%20%2%200m.n%%%2020 |
+|                       | 2%%2020%200i%%2%2002%%20200%20%%%2%20%200202%200h%2%%20200.%2 |
+|                       | %20%200g%%20%20%%202%20%200%2020o%%20%202%20%200%20%20%20%20v |
+|                       | %20/p%20%20%%2020ub%%2020%%202%20%200m%20%20ed/%203%2%2%2000% |
+|                       | %%2020209%20%20%%20%20%2%200%20%2020%%%20%20%2020207%2%2%200% |
+|                       | %20%20%2%2002003%20%%202%200%%%20%20%2%200202%20%2%2000%2%%20 |
+|                       | 200%20%206%%20207%20%%%2020%%2020%2%200%202%%20%20200%205%20% |
+|                       | %20%202%200%20%201%20%22Link%20t%20o%20%20PubMed%20record%22) |
++-----------------------+---------------------------------------------------------------+
 
 : Tabla 1: Detalles del Bioproyecto y características de las muestras
 
@@ -156,34 +126,39 @@ continuación, la cual contiene carpetas compartidas con la estructura
 dentro del cluster:
 
 ```         
-├── Equipo2.Rproj
-├── README.md
-├── Reporte-Bioproject-Final.Rmd
-├── figures
-│   ├── Diagrama_de_flujo.png
-│   ├── Heatmap_KD_vs_WT.png
-│   ├── KEGG_droplot.png
-│   ├── ManhattanGO_KD_vs_WT.png
-│   ├── PCA_no_batch_rlog.png
-│   ├── PCA_rlog.png
-│   ├── VolcanoPlot_KD_vs_WT.png
-│   ├── barplotDOWN_GO_KD_vs_WT.png
-│   ├── barplotUP_GO_KD_vs_WT.png
-│   ├── fastqc_adapters.png
-│   ├── fastqc_adapters_processed.png
-│   ├── fastqc_per_base_n_content_plot-01.png
-│   ├── fastqc_per_base_n_content_plot.png
-│   ├── fastqc_per_base_sequence_quality_plot-01.png
-│   ├── fastqc_per_base_sequence_quality_plot.png
-│   ├── fastqc_per_sequence_gc_content_plot-01.png
-│   ├── fastqc_per_sequence_gc_content_plot.png
-│   ├── fastqc_per_sequence_quality_scores_plot-01.png
-│   ├── fastqc_per_sequence_quality_scores_plot.png
-│   ├── fastqc_sequence_duplication_levels_plot-01.png
-│   ├── fastqc_sequence_duplication_levels_plot.png
-│   └── fastqc_sequence_length_distribution_plot.png
-├── metadata.csv
-├── out_logs
+├── Equipo2.Rproj                                         # Proyecto en R                         
+├── README.md                                             # Archivo README del proyecto.
+├── Reporte-Bioproject-Final.Rmd                          # Archivo con reporte documentado
+├── Reporte-Bioproject-Final.html                         # Archivo renderizado del reporte (este archivo)
+├── Infografia-Cientifica-Proyecto                        # Infografía Científica para el público general
+├── metadata.csv                                          # Metadata de proyecto utilizada en scripts
+├── figures                                               # Carpeta con imagenes usadas en reporte
+│   ├── Diagrama_de_flujo.png                               # Workflow del proyecto
+│   ├── Dotplot-articulo-original.jpeg                      # Dotplot artículo de referencia
+│   ├── Heatmap_KD_vs_WT.png                                # Heatmap 20 genes más expresados diferencialmente
+│   ├── KEGG_droplot.png                                    # Droplot con pathways KEGG más enriquecidos
+│   ├── ManhattanGO_KD_vs_WT.png                            # Manhattan plot de Geno Ontology (GO)
+│   ├── PCA_no_batch_rlog.png                               # PCA sin batch effect
+│   ├── PCA_rlog.png                                        # PCA con batch effect
+│   ├── VolcanoPlot_KD_vs_WT.png                            # Volcano Plot genes sobreexpresados y subexpresados
+│   ├── VolcanoPlot-articulo-original.jpeg                  # Volcano Plot artículo de referencia
+│   ├── barplotDOWN_GO_KD_vs_WT.png                         # Barplot 40 términos más subexpresados 
+│   ├── barplotUP_GO_KD_vs_WT.png                           # Barplot 40 términos más sobreexpresados
+│   ├── fastqc_adapters_processed.png                       # Imagenes de control de calidad
+│   ├── fastqc_adapters_raw.png                               # raw: antes de trimming
+│   ├── fastqc_per_base_n_content_plot_processed.png          # processed: después de trimming
+│   ├── fastqc_per_base_n_content_plot_raw.png
+│   ├── fastqc_per_base_sequence_quality_plot_processed.png
+│   ├── fastqc_per_base_sequence_quality_plot_raw.png
+│   ├── fastqc_per_sequence_gc_content_plot_processed.png
+│   ├── fastqc_per_sequence_gc_content_plot_raw.png
+│   ├── fastqc_per_sequence_quality_scores_plot_processed.png
+│   ├── fastqc_per_sequence_quality_scores_plot_raw.png
+│   ├── fastqc_sequence_duplication_levels_plot_processed.png
+│   ├── fastqc_sequence_duplication_levels_plot_raw.png
+│   ├── fastqc_sequence_length_distribution_plot_processed.png
+│   └── fastqc_sequence_length_distribution_plot_raw.png
+├── out_logs                                              # Outlogs de jobs de slurm corridos en Ken
 │   ├── DEG_STAR_KD1685.err
 │   ├── DEG_STAR_KD1685.out
 │   ├── GO_terms_STAR1687.err
@@ -242,19 +217,19 @@ dentro del cluster:
 │   ├── trimm_1435.out
 │   ├── trimm_1437.err
 │   └── trimm_1437.out
-├── quality
-│   ├── multiqc_report.html
-│   └── multiqc_report_1.html
-├── results
-│   ├── DE_KD_vs_WT.csv
-│   ├── DOWN_GOKD_vs_WT.csv
-│   ├── KEGG_enrichment_KD_vs_WT.csv
-│   ├── STEAP3_KD_vs_WT.RData
-│   ├── UP_GO_KD_vs_WT.csv
-│   ├── counts
-│   │   ├── raw_counts.RData
-│   │   └── raw_counts.csv
-│   └── figures
+├── quality                                               # Reporte de calidad Multiqc
+│   ├── multiqc_report_raw.html                             # Reporte datos antes de trimming
+│   └── multiqc_report_processed.html                       # Reporte datos después de trimming
+├── results                                               # Resultados de scripts
+│   ├── DE_KD_vs_WT.csv                                     # Matriz con DEGs, LFC y p-values
+│   ├── DOWN_GOKD_vs_WT.csv                                 # Matriz 40 términos, genes subexpresados
+│   ├── KEGG_enrichment_KD_vs_WT.csv                        # Matriz vías KEGG enriquecidas
+│   ├── STEAP3_KD_vs_WT.RData                               # Matriz metadata y objeto dds (DESeq2)
+│   ├── UP_GO_KD_vs_WT.csv                                  # Matriz 40 términos, genes sobreexpresados
+│   ├── counts                                            # Cuentas crudas de 6 transcriptomas
+│   │   ├── raw_counts.RData                                # Metadata y cuentas
+│   │   └── raw_counts.csv                                  # Solo cuentas
+│   └── figures                                           # Figuras generadas con scripts
 │       ├── Heatmap_KD_vs_WT.png
 │       ├── KEGG_droplot.png
 │       ├── ManhattanGO_KD_vs_WT.png
@@ -263,23 +238,30 @@ dentro del cluster:
 │       ├── VolcanoPlot_KD_vs_WT.png
 │       ├── barplotDOWN_GO_KD_vs_WT.png
 │       └── barplotUP_GO_KD_vs_WT.png
-└── scripts
-    ├── 01_DownloadRawData.sh
-    ├── 02_Quality_raw.sh
-    ├── 03_Trimmed.sh
-    ├── 04_Quality_trimmed.sh
-    ├── 05_STAR_index.sh
-    ├── 06_STAR_align.sh
-    ├── 07_Load_data_STAR.R
-    ├── 08_DEG_STAR_KD.R
-    ├── 09_Visualization_data_STAR.R
-    └── 10_GO_terms_STAR.R
+└── scripts                                               # Scripts documentados del proyecto
+    ├── 01_DownloadRawData.sh                               # Descarga archivos FASTQ
+    ├── 02_Quality_raw.sh                                   # Reportes FastQC datos crudos
+    ├── 03_Trimmed.sh                                       # Trimming datos
+    ├── 04_Quality_trimmed.sh                               # Reportes FastQC datos procesados
+    ├── 05_STAR_index.sh                                    # Indexado de genoma referencia  
+    ├── 06_STAR_align.sh                                    # Alineamiento y cuentas con STAR
+    ├── 07_Load_data_STAR.R                                 # Matriz de cuentas conjunta en R
+    ├── S07_Load_data_STAR.sh                               # Job slurm Script 7
+    ├── 08_DEG_STAR_KD.R                                    # Corrección batch effect y análisis DEG
+    ├── S08_DEG_STAR_KD.sh                                  # Job slurm Script 8
+    ├── 09_Visualization_data_STAR.R                        # Genera VolcanoPlot y Heatmap
+    ├── S09_Visualization_data_STAR.sh                      # Job slurm Script 9
+    ├── 10_GO_terms_STAR.R                                  # Enriquecimiento de términos GO, KEGG
+    └── S10_GO_terms_STAR.sh                                # Job slurm Script 10
 ```
 
 ## Outlogs
 
 Los **outlogs** de los scripts se pueden observar en:
 [Outlogs](https://github.com/leonardoglez6/Equipo2/tree/main/out_logs).
+
+Y, dentro del cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/scripts/out_logs`
 
 ## Paquetes y versiones
 
@@ -322,6 +304,9 @@ El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/01_DownloadRawData.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/01_DownloadRawData.sh)
 
+Los datos correspondientes, se almacenaron en el cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/raw`
+
 ## 2. Análisis de calidad de las secuencias de los datos crudos
 
 Se realizó el análisis de calidad de las 6 muestras seleccionadas con el
@@ -331,6 +316,10 @@ MultiQC.
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/02_Quality_raw.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/02_Quality_raw.sh)
+
+Los resultados del análisis de calidad, se almacenaron en el cluster, en
+la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/quality1`
 
 Se obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
@@ -405,6 +394,9 @@ El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/03_Trimmed.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/03_Trimmed.sh)
 
+Los datos después del trimming, se almacenaron en el cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/data/processed`
+
 ## 4. Análisis de calidad de las secuencias de los datos procesados
 
 Seguido del trimming, se realizó el análisis de calidad de las 6
@@ -414,6 +406,10 @@ después generando un MultiQC.
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/04_Quality_trimmed.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/04_Quality_trimmed.sh)
+
+Los resultados del análisis de calidad, se almacenaron en el cluster, en
+la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/quality2`
 
 Se obtuvo un contenido de GC aproximado de 50% formando una distribución
 normal, característica de un resultado esperado de buena calidad, y una
@@ -474,6 +470,9 @@ realizar el indexado para acceder a los datos de forma más eficiente.
 Para ello se obtuvo el genoma de referencia humano desde NCBI, versión
 *GRCh38.p14*, en formato FASTA (secuencia) y GTF (anotaciones).
 
+El genoma y anotaciones se almacenaron dentro del cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/reference`
+
 Posteriormente, se realizó el indexado con STAR, utilizando los
 siguientes parámetros:
 
@@ -496,6 +495,9 @@ siguientes parámetros:
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/05_STAR_index.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/05_STAR_index.sh)
+
+Los resultados del indexado, se almacenaron en el cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_index`
 
 ## 6. Alineamiento de secuencias con STAR
 
@@ -526,6 +528,10 @@ El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/06_STAR_align.sh](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/06_STAR_align.sh)
 
+Los resultados del alineamiento, se almacenaron en el cluster, en la
+ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/align/STAR/STAR_output`
+
 ## 7. Importar datos de cuentas en R
 
 Posterior al alineamiento con STAR, es necesario importar los datos
@@ -541,6 +547,9 @@ Al terminar este script, contamos con una matriz de cuentas crudas de
 los datos y cargamos los metadatos. Ambos se encuentran en la ruta de
 github `results/counts/raw_counts.RData` como un dataset de R para
 cargar.
+
+Y, dentro del cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/results/counts`
 
 ## 8. Análisis de expresión diferencial de genes (DEGs)
 
@@ -605,6 +614,10 @@ se utilizaron los paquetes de `ggplot2` y `pheatmap`
 El script correspondiente se puede encontrar dentro del GitHub, en la
 ruta
 [scripts/09_Visualization_data_STAR.R](https://github.com/leonardoglez6/Equipo2/blob/main/scripts/09_Visualization_data_STAR.R)
+
+Las gráficas generadas en este paso y el siguiente se guardaron en el
+cluster, en la ruta
+`/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo2/results/figures`
 
 ### Volcano Plot
 
@@ -981,7 +994,9 @@ El volcano plot que se realizó en el artículo presenta todos sus DEGs,
 resaltando que los mismos genes con mayor p-value de cada grupo
 coinciden con los reportados en nuestro trabajo.
 
-[IMAGEN DEL VOLCANOPLOT DEL ARTÍCULO]
+![Volcano Plot del artículo "Silencing of *STEAP3* suppresses cervical
+cancer cell proliferation and migration via JAK/STAT3 signaling
+pathway."](figures/Volcanoplot-articulo-original.jpeg)
 
 Además el artículo presenta un dotplot en el cual se visualizan las 20
 rutas más enriquecidas en KEGG, de la cual destacan la Vía de
@@ -997,7 +1012,61 @@ Sin embargo, al contrario de ellos, debido a nuestro reducido número de
 DEGs, dicha vía de señalización no se encuentra enriquecida en nuestro
 análisis.
 
-[IMAGEN DEL DOTPLOT DEL ARTÍCULO]
+![Dotplot del artículo "Silencing of *STEAP3* suppresses cervical cancer
+cell proliferation and migration via JAK/STAT3 signaling
+pathway."](figures/Dotplot-articulo-original.jpeg){width="427"}
+
+Por otro lado, la importancia de la expresión de *STEAP3* no solo ha
+sido reportada para el cáncer de cuello uterino. Como se menciona en
+Han, Y., *et al*., cuando *STEAP3* se encuentra sobreexpresado en
+tejidos de cáncer de ovarios, se reporta una menor supervivencia.
+
+Por lo tanto, mediante experimentos *in vitro* se demostró que al
+silenciar *STEAP3* disminuye la proliferación, migración y capacidad
+invasiva de células tumorales, esto al desencadenar procesos de
+ferroptosis en las células cancerosas.
+
+Un aspecto relevante es que existe una correlación negativa entre
+*STEAP3* y p53. Donde, al silenciar *STEAP3*, los niveles de p53
+aumentan, inhibiendo la expresión de *SLC7A11*, induciendo la
+ferroptosis.
+
+Con ello, podemos concluir que el silenciamiento de *STEAP3* puede
+inhibir el crecimiento de diversos tumores y que puede hacerlo mediante
+vías distintas a JAK-STAT.
+
+Referente a los otros genes que tenían una expresión diferenciada,
+pudimos complementar nuestro análisis al informarnos de otras funciones
+de algunos genes y la relación con el cáncer cervical reportada en la
+literatura.
+
+Primeramente, los genes *SERPINB3* y *SERPINB4* son los genes
+sobreexpresados que presentan un mayor p-value y tienen homología
+divirgiendo principalmente en loop del sitio reactivo (RSL) en la región
+de carboxyl terminal. Particularmente, *SERPINB3* es un inhibidor de
+proteasa de cisteína intracelular que se ha reportado sobreexpresado en
+cáncer.
+
+En el estudio realizado por Wang, S., *et al.* se mostró que las células
+de cáncer cervical son más sensibles a tratamiento, esto debido a que
+este gen tiene funciones de protección ante daño lisosomal y muerte
+organismal al inhibir la actividad de proteasa de cisteína inducida por
+estreses como daño al DNA y especies reactivas de oxígeno.
+
+Por otro lado, podemos analizar la relación de la sobreexpresión de
+*CXCL10* con la supresión de la proliferación celular.
+
+De acuerdo con Li, X., et al. donde se creo un adenovirus oncolítico
+recombinante modificado genéticamente para expresar la quimiocina
+*CXCL10*, la expresión continua de *CXCL10* en el interior del tumor,
+atrae a las células T, que expresan el receptor *CXCR3* (ubicado en la
+superficie de los linfocitos T citotóxicos CD8+ y CD4+).
+
+Por lo tanto, la terapia con *CXCL10* suprime el crecimiento del tumor,
+incrementando la infiltración de células T en el microambiente tumoral.
+
+Podemos concluir que la sobreexpresión de este gen es coherente como una
+respuesta de la célula para suprimir la proliferación celular.
 
 # Referencias
 
@@ -1007,6 +1076,24 @@ análisis.
     pathway. *Cancer & metabolism*, *12*(1), 40.
     <https://doi.org/10.1186/s40170-024-00370-2>
 
--   Ferroptosis, un mecanismo de muerte celular presente en β-talasemia
-    menor. (2024). *Revista Bioquímica Y Patología Clínica*, *89*(1),
+-   Terán, M., Mónaco, M., Haro, C., Ledesma, M. *et al*. Ferroptosis,
+    un mecanismo de muerte celular presente en β-talasemia menor.
+    (2024). *Revista Bioquímica Y Patología Clínica*, *89*(1),
     19-26. <https://doi.org/10.62073/k7g1yk82>
+
+-   Han, Y., Fu, L., Kong, Y., Jiang, C., Huang, L., & Zhang, H. (2024).
+    STEAP3 Affects Ovarian Cancer Progression by Regulating Ferroptosis
+    through the p53/SLC7A11 Pathway. *Mediators of inflammation*,
+    *2024*, 4048527. <https://doi.org/10.1155/2024/4048527>
+
+-   Wang, S., Luke, C.J., Pak, S.C. *et al.* SERPINB3 (SCCA1) inhibits
+    cathepsin L and lysoptosis, protecting cervical cancer cells from
+    chemoradiation. *Commun Biol* **5**, 46 (2022).
+    <https://doi.org/10.1038/s42003-021-02893-6>
+
+-   Li, X., Lu, M., Yuan, M., Ye, J., Zhang, W., Xu, L., Wu, X., Hui,
+    B., Yang, Y., Wei, B., Guo, C., Wei, M., Dong, J., Wu, X., & Gu, Y.
+    (2022). CXCL10-armed oncolytic adenovirus promotes
+    tumor-infiltrating T-cell chemotaxis to enhance anti-PD-1 therapy.
+    *Oncoimmunology*, *11*(1), 2118210.
+    <https://doi.org/10.1080/2162402X.2022.2118210>
