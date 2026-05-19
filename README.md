@@ -21,7 +21,7 @@
 
 El artículo “Silencing of STEAP3 suppresses cervical cancer cell proliferation and migration via JAK/STAT3 signaling pathway” propone investigar los mecanismos de STEAP3 en la proliferación y migración celular en cáncer cervical. SYEAP3 pertenece a la familia de las proteínas STEAP los cuáles se ha reportado que participan en la proliferación y metástasis del cáncer. Con RNA-seq se comparó la expresión de las vías de señalización en las cuáles participa STEAP3 en presencia de STEAP3 (NC) y con knockdown del gen (KD) en células de la línea celular HeLA.
 
-**Reporte renderizado**: Se encuentra dentro del Github en el archivo [Reporte-Bioproject-Final.Rmd](enlace.html)
+**Reporte renderizado**: Se encuentra dentro del Github en el archivo [Reporte-Bioproject-Final.html](https://github.com/leonardoglez6/Equipo2/blob/main/Reporte-Bioproject-Final.html)
 
 ## Estructura 🗂️
 
